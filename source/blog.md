@@ -3,7 +3,7 @@ layout: default
 title: Blog
 permalink: /blog/
 ---
-
+<!--
 <section class="post-list">
   {% for post in paginator.posts %}
     {% include article.html %}
@@ -11,3 +11,4 @@ permalink: /blog/
 
   {% include pagination.html %}
 </section>
+-->

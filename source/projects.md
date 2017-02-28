@@ -18,7 +18,7 @@ We represented our institute at the National Student Autonomous Vehicle (SAVe) C
 </p>
 
 <hr>
-
+	
 # Unmanned Exploration System
 Funded by The Boeing Company | <small>Status: Completed (July - January 2016)</small>
 

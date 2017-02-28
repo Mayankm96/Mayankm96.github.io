@@ -4,7 +4,7 @@ markdown    : kramdown
 highlighter : pygments
 gems: [jekyll-paginate]
 
-paginate: 5
+paginate: 3
 paginate_path: "/blog/page/:num/"
 comments: true
 
@@ -46,8 +46,8 @@ documents:
 navbar:
   - slug: about
     title: About
-  - slug: blog
-    title: Blog
+  #- slug: blog
+  #  title: Blog
   - slug: projects
     title: Projects
   - slug: resume

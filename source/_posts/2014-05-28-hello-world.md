@@ -1,11 +1,9 @@
 ---
 title: Hello world!
-author: steve
 layout: post
-permalink: /blog/2014/05/hello-world/
-categories:
-  - Site News
-excerpt: "I do not anticipate doing a lot of professional blogging here. When I do, it'll largely be about R, LaTeX, or professional development for students in political science."
+date:   2015-11-26 13:46:52
+comments: true
+categories: jekyll update
 ---
 
 

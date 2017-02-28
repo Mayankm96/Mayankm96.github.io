@@ -11,15 +11,8 @@ Made using [end2end](git clone git@github.com:nandomoreirame/end2end.git) based 
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `bundle exec jekyll serve`
 
-Access, [localhost:4000/end2end](http://localhost:4000/end2end)
-
-### Deploy in Github pages in 2 steps
-
-1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
-2. Run `rake` or `rake publish` for build and publish on Github
-
----
+Access, [localhost:4000/](http://localhost:4000/)
 
 ### Copyright and License
 
-Everything besides the contents in `source/_posts` and `source/_images` is under [the MIT license](/LICENSE).
+Everything besides the contents in `source/_posts`, `source/documents` and `source/images` is under [the MIT license](/LICENSE).
