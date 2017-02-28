@@ -1,6 +1,6 @@
 # Personal Website
 
-Made using [end2end]{git clone git@github.com:nandomoreirame/end2end.git} theme based on Clean Jekyll.
+Made using [end2end](git clone git@github.com:nandomoreirame/end2end.git) based on Clean Jekyll theme.
 
 ---
 
