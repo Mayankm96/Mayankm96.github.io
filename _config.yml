@@ -4,7 +4,7 @@ markdown    : kramdown
 highlighter : pygments
 gems: [jekyll-paginate]
 
-paginate: 3
+paginate: 5
 paginate_path: "/blog/page/:num/"
 comments: true
 
