@@ -1,0 +1,55 @@
+# Build settings
+permalink   : /blog/:year/:title/
+markdown    : kramdown
+highlighter : pygments
+gems: [jekyll-paginate]
+
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed # expanded
+
+# SEO settings
+title: Mayank Mittal
+description: "Personal website and blog"
+keywords: "mayank, iitk, robotics, blog, web"
+url: http://Mayankm96.github.io
+baseurl: ""
+
+# google_analytics: UA-52446115-1
+repo: http://github.com/Mayankm96
+disqus_shortname: "mayankm96"
+disqus_site_shortname: "mayankm96"
+
+# Author settings
+author:
+  name      : Mayank Mittal
+  job       : Junior in Electrical Engineering at IIT Kanpur
+  bio       : "Robotics Enthusiast"
+  thumb     : /images/Mayank.jpg
+  email     : mayankm@iitk.ac.in
+  url       : http://Mayankm96.github.io
+  github    : http://github.com/Mayankm96
+  facebook  : https://www.facebook.com/mayankm.1596
+  linkedin  : https://www.linkedin.com/in/mayankm-0096/
+
+#Documents
+documents:
+  resume    : /documents/Mayank_CV.pdf
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: blog
+    title: Blog
+  - slug: projects
+    title: Projects
+  - slug: resume
+    title: Resume
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
