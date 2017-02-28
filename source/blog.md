@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Blog
+permalink: /blog/
 ---
 
 <section class="post-list">
