@@ -41,7 +41,7 @@ In order to increae our efficiency, the team of seven members has been divided i
 
 ## Implementation of SLAM for Underwater Robotics
 
-<p style="text-align:left;">Mentor: <a href url="http://engineering.nyu.edu/people/farshad-khorrami">Prof. Farshad Khorrami</a>
+<p style="text-align:left;">Mentor: <a href="http://engineering.nyu.edu/people/farshad-khorrami">Prof. Farshad Khorrami</a>
  <span style="float:right;"><small>May-June 2016</small></span></p>
 
 The project involved reviewing various Bayesian filters and Least Squares optimization for Simulataneous Localization and Mapping (SLAM), keeping in mind its applicability to underwater robots. 
@@ -56,7 +56,7 @@ Towards the end of the project, I implmented the Extended Kalman Filter algorith
 
 ## Finite Element Analysis in Electromagnetism
 
-<p style="text-align:left;">Mentor: <a href url="http://iitk.ac.in/new/rathish-kumar-b-v">Prof. B. V. Rathish Kumar</a>
+<p style="text-align:left;">Mentor: <a href="http://iitk.ac.in/new/rathish-kumar-b-v">Prof. B. V. Rathish Kumar</a>
  <span style="float:right;"><small>December 2015</small></span></p>
 
 <img style="float: left; padding:0px 6px 0px 0px" src="/images/Projects/FEM.PNG" width="45%">
