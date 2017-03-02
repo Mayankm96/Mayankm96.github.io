@@ -14,4 +14,4 @@ Apart from academia, I tend to spend my time playing tennis, running tracks or t
 
 Currently, I am interested in working on motion planning problems, particularly on path planning for mobile robots and grasp planning. 
 
-In case you feel like reaching out to me  write an e-mail to <mailto: mayankm@iitk.ac.in>.
+In case you would like to reach out to me, e-mail me at <mailto: mayankm@iitk.ac.in>.

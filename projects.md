@@ -31,7 +31,7 @@ Supervisors: [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/), [
 
 In our current phase of the project (phase-VII), we are building an aerial and ground vehicle team of autonomus robots that shall perform the operation of bomb- disposal squad. The two robots seem to form a 'symbiotic' relationship in which they help overcome each others limitations and leverage their capabilities.
 
-In order to increae our efficiency, the team of seven members has been divided into two- one dealing with mapping using the aerial robot while the other one working on the localization and planning for the ground robot. My work has been directed towards using sampling based algorithms such as Rapidly- exploring Random Trees (RRT) and its variants (RRT*, A*-RRT*) for planning the motion of the ground robot, and implemnting it on the same.
+In order to increae our efficiency, the team of seven members has been divided into two- one dealing with mapping using the aerial robot while the other one working on the localization and planning for the ground robot. My work has been directed towards using sampling based algorithms such as Rapidly- exploring Random Trees (RRT) and its variants (RRT* , A* -RRT*) for planning the motion of the ground robot, and implemnting it on the same.
 <p align="center">
     <a class="btn btn-primary" href="../documents/Abhyast Plan.pdf" target="_blank">View Postor </a>
     <a class="btn btn-primary" href="http://www.iitk.ac.in/dord/boeing/public/" target="_blank">Visit Website</a>
@@ -63,7 +63,7 @@ Towards the end of the project, I implmented the Extended Kalman Filter algorith
 
 The motivation of the project lied in understanding the math behind Electrical Impedence Tomography (EIT), a medical imaging technique in which electrical conductivity across a part/tissue of the body is used to reconstruct a cross- section image of that part.
 
-My work required reviewing the two popular Finite Element Analysis (FEA) methods- Ritz and Glarenkin, and to solve boundary value problems in elctromagnetism  in one- and two- dimensions using adaptive mesh techniques. For instance, the image in the left is the result of the simulation done using the software FreeREM++ to solve the two- dimensional axisymmetric problem in electromagnetism.
+My work required reviewing the two popular Finite Element Analysis (FEA) methods- Ritz and Glarenkin, and to solve boundary value problems in electromagnetism  in two- dimensions using adaptive mesh techniques. For instance, the image to the left is a simulation done using the tool FreeFEM++ to solve a two- dimensional axisymmetric problem in electromagnetism.
 
 <p align="center">
     <a href="../documents/NPDE-TCA FEM.pdf" class="btn btn-primary" target="_blank">View Notes</a> 
