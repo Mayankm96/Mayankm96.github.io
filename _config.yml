@@ -1,12 +1,14 @@
 # Build settings
 permalink   : /blog/:year/:title/
 markdown    : kramdown
-highlighter : pygments
+highlighter : rouge
 gems: [jekyll-paginate]
 
-paginate: 3
+paginate: 5
 paginate_path: "/blog/page/:num/"
 comments: true
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
 
 sass:
   sass_dir: _scss
@@ -19,7 +21,7 @@ keywords: "mayank, iitk, robotics, blog, web"
 url: http://Mayankm96.github.io
 baseurl: ""
 
-# google_analytics: UA-52446115-1
+google_analytics: UA-92958928-1
 repo: http://github.com/Mayankm96
 disqus_shortname: "mayankm96"
 disqus_site_shortname: "mayankm96"
@@ -50,4 +52,3 @@ navbar:
     title: Resume
   - slug: about
     title: About
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
