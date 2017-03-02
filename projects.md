@@ -5,7 +5,7 @@ permalink: /projects/
 
 ## Autonomous Underwater Vehicle (AUV) 
 
- <p style="text-align:left;"> Funded by Dean of Research and Development, IIT Kanpur <span style="float:right;"><small>November 2014- ongoing</small></span></p>
+<p style="text-align:left;"> Funded by Dean of Research and Development, IIT Kanpur <span style="float:right;"><small>November 2014- ongoing</small></span></p>
 Supervisors: [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. Sachin Y. Shinde](http://www.iitk.ac.in/new/sachin-y-shinde)
 
 <img style="float: left; padding: 0px 6px 0px 0px" src="/images/Projects/AUV/AUV water.jpg" width="45%">
