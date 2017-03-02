@@ -3,14 +3,16 @@ layout: page
 permalink: /projects/
 ---
 
-# Autonomous Underwater Vehicle (AUV) 
-Funded by Dean of Research and Development, IIT Kanpur | <small> Status: Ongoing (November 2014- )</small>
- 
-_Supervisors_: [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. Sachin Y. Shinde](http://www.iitk.ac.in/new/sachin-y-shinde)
+## Autonomous Underwater Vehicle (AUV) 
 
-Initiated in 2014 by a group of undergraduates, the project aims to build an AUV which would eventually serve as a platform for research in underwater robotics. The team has been divided into three sub-systems namely mechanical, electrical and software, of which my major contributions has been towards the mechanical and electrical aspects till now.
+ <p style="text-align:left;"> Funded by Dean of Research and Development, IIT Kanpur <span style="float:right;"><small>November 2014- ongoing</small></span></p>
+Supervisors: [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. Sachin Y. Shinde](http://www.iitk.ac.in/new/sachin-y-shinde)
 
-We represented our institute at the National Student Autonomous Vehicle (SAVe) Competition held at Chennai in December 2016, and achieved the second position among 13 shortlisted teams for the finals.
+<img style="float: left; padding: 0px 6px 0px 0px" src="/images/Projects/AUV/AUV water.jpg" width="45%">
+
+Initiated in 2014 by a team of undergraduates, as a project in Robotics Club, we aim to build an AUV as a platform for research in underwater robotics. The team has been divided into three sub-systems namely the mechanical, electrical and software subsystems, of which my major contributions has been towards the former two.
+
+We participated at the National Student Autonomous Vehicle (SAVe) Competition held at Chennai in December 2016, and achieved a second position on our debut, among 12 other shortlisted teams for the finals.
 
 <p align="center"> 
     <a class="btn btn-primary" href="../documents/AUV-IITK Report.pdf" target="_blank">View Report </a>
@@ -19,12 +21,16 @@ We represented our institute at the National Student Autonomous Vehicle (SAVe) C
 
 <hr>
 	
-# Unmanned Exploration System
-Funded by The Boeing Company | <small>Status: Completed (July - January 2016)</small>
+## Unmanned Exploration System
 
-_Supervisors_: [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/), [Prof. S. Kamle](http://www.iitk.ac.in/new/dr-s-kamle)
+<p style="text-align:left;"> Funded by The Boeing Company <span style="float:right;"><small>July 2016- ongoing</small></span></p>
+Supervisors: [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/), [Prof. S. Kamle](http://www.iitk.ac.in/new/dr-s-kamle)
 
-The project was initiated in 2009 to promote undergraduate research at the institute. The phase-VII of the project began on July 2016.The aim of current phase is to build an aerial and ground vehicle team which shall explore an unknown territory using SLAM algorithms. 
+<img style="float: left; padding: 0px 6px 0px 0px" src="/images/Projects/Boeing/Phase bots.jpg" width="45%">
+
+In our current phase of the project (phase-VII), we are building an aerial and ground vehicle team of autonomus robots that shall perform the operation of bomb- disposal squad. The two robots seem to form a 'symbiotic' relationship in which they help overcome each others limitations and leverage their capabilities.
+
+In order to increae our efficiency, the team of seven members has been divided into two- one dealing with mapping using the aerial robot while the other one working on the localization and planning for the ground robot. My work has been directed towards using sampling based algorithms such as Rapidly- exploring Random Trees (RRT) and its variants (RRT*, A*-RRT*) for planning the motion of the ground robot, and implemnting it on the same.
 <p align="center">
     <a class="btn btn-primary" href="../documents/Abhyast Plan.pdf" target="_blank">View Postor </a>
     <a class="btn btn-primary" href="http://www.iitk.ac.in/dord/boeing/public/" target="_blank">Visit Website</a>
@@ -32,28 +38,32 @@ The project was initiated in 2009 to promote undergraduate research at the insti
 
 <hr>
 
-# Implementation of SLAM for Underwater Robotics
-Status: Completed (May-June 2016)
+## Implementation of SLAM for Underwater Robotics
 
-_Mentor_: [Prof. Farshad Khorrami](http://engineering.nyu.edu/people/farshad-khorrami)
+<p style="text-align:left;">Mentor: <a href url="http://engineering.nyu.edu/people/farshad-khorrami">Prof. Farshad Khorrami</a>
+ <span style="float:right;"><small>May-June 2016</small></span></p>
 
-The project involved reviewing the various Bayesian filters and Least Squares optimization for Simulataneous Localization and Mapping (SLAM), keeping in mind its applicability to underwater robots.
+The project involved reviewing various Bayesian filters and Least Squares optimization for Simulataneous Localization and Mapping (SLAM), keeping in mind its applicability to underwater robots. 
 
-The robot simulation tool V-REP was used to run available Kalman Filter algorithms for SLAM in a simple static environment in order to deepen the understanding of the entire problem.
+Towards the end of the project, I implmented the Extended Kalman Filter algorithm on a Pioneer 3dx robot using the robot simulator V-REP and MATLAB, in order to deepen my understanding of the various elements involved in the SLAM problem such as data association, and scan alignment.
 
 <p align="center">
-<a href="../documents/NYU-RTE_Report_Mayank.pdf" class="btn btn-primary" target="_blank">View Report</a> 
+<a href="/documents/NYU-RTE_Report_Mayank.pdf" class="btn btn-primary" target="_blank">View Report</a> 
 </p>
 
 <hr>
 
-# Finite Element Analysis in Electromagnetism
+## Finite Element Analysis in Electromagnetism
 
-_Mentor_: [Prof. B. V. Rathish Kumar](http://iitk.ac.in/new/rathish-kumar-b-v)
+<p style="text-align:left;">Mentor: <a href url="http://iitk.ac.in/new/rathish-kumar-b-v">Prof. B. V. Rathish Kumar</a>
+ <span style="float:right;"><small>December 2015</small></span></p>
 
-The motivation of the project lied in understanding the math behind Electrical Impedence Tomography (EIT).
+<img style="float: left; padding:0px 6px 0px 0px" src="/images/Projects/FEM.PNG" width="45%">
 
-It required reviewing of the Ritz and Glarenkin's methods to solve differential equations in one- and two- dimensions, and implmenting them to solve boundary valued problems of electromagnetism using MATLAB and FreeFEM++.
+The motivation of the project lied in understanding the math behind Electrical Impedence Tomography (EIT), a medical imaging technique in which electrical conductivity across a part/tissue of the body is used to reconstruct a cross- section image of that part.
+
+My work required reviewing the two popular Finite Element Analysis (FEA) methods- Ritz and Glarenkin, and to solve boundary value problems in elctromagnetism  in one- and two- dimensions using adaptive mesh techniques. For instance, the image in the left is the result of the simulation done using the software FreeREM++ to solve the two- dimensional axisymmetric problem in electromagnetism.
+
 <p align="center">
     <a href="../documents/NPDE-TCA FEM.pdf" class="btn btn-primary" target="_blank">View Notes</a> 
 </p>
