@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /projects/
+title: Projects
 ---
 
 ## Autonomous Underwater Vehicle (AUV) 
