@@ -3,7 +3,7 @@ layout: page
 permalink: /projects/
 ---
 
-# Autonomous Underwater Vehicle (AUV) 
+## Autonomous Underwater Vehicle (AUV) 
 
 <p style="text-align:left;"> Funded by Dean of Research and Development, IIT Kanpur <span style="float:right;"><small>November 2014- ongoing</small></span></p>
 Supervisors: [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. Sachin Y. Shinde](http://www.iitk.ac.in/new/sachin-y-shinde)
@@ -21,7 +21,7 @@ We participated at the National Student Autonomous Vehicle (SAVe) Competition he
 
 <hr>
 	
-# Unmanned Exploration System
+## Unmanned Exploration System
 
 <p style="text-align:left;"> Funded by The Boeing Company <span style="float:right;"><small>July 2016- ongoing</small></span></p>
 Supervisors: [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/), [Prof. S. Kamle](http://www.iitk.ac.in/new/dr-s-kamle)
