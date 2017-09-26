@@ -23,8 +23,8 @@ baseurl: ""
 
 google_analytics: UA-92958928-1
 repo: http://github.com/Mayankm96
-disqus_shortname: "mayankm96"
-disqus_site_shortname: "mayankm96"
+disqus_shortname: "mayankm-96"
+disqus_site_shortname: "mayankm-96"
 
 # Author settings
 author:

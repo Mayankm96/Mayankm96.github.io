@@ -21,4 +21,15 @@
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   </div>
 </aside>
+
+<h3 class="related-post-title">Related Posts</h3>
+  {% for post in site.show_related_posts %}
+    <div class="post ml2">
+      <a href="{{ site.url | prepend: site.baseurl }}" class="post-link">
+        <h4 class="post-title">{{ post.title }}</h4>
+        <p class="post-summary">{{ post.content | strip_html | truncatewords: 30 }}</p>
+      </a>
+    </div>
+  {% endfor %}
+
 {% endif %}
