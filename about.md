@@ -6,12 +6,12 @@ permalink: /about/
 
 <h1 class="post-title">About Me</h1>
 <br>
-I am Mayank Mittal, a junior in the Department of Electrical Engineering at the Indian Institute of Technology, Kanpur (IITK), India. Although a self- proclaimed _jack of all trades_, I owe severable cherishable experiences to this. 
+I am Mayank Mittal, a senior in the Department of Electrical Engineering at the Indian Institute of Technology, Kanpur (IITK), India. Although a self- proclaimed _jack of all trades_, I owe severable cherishable experiences to this.
 
-A lot of my work, as an undergraduate, have been self- initiated at the [Robotics Club](http://students.iitk.ac.in/roboclub/) of our institute. The most significant of all is the Autonomous Underwater Vehicle (AUV) which my friends and I started working on in our freshman year. Last summers, I had the opportunity to work with [Prof. Farshad Khorrmai](http://engineering.nyu.edu/people/farshad-khorrami) at New York University (NYU) on implementation of SLAM algorithms for marine robotics. My experience strengthened my interest to work in the field of robotics.
- 
-Apart from academia, I tend to spend my time playing tennis, running tracks or trying out random melodies on my guitar. For a fact, I enjoy making presentations and reports, and end up spending hours to simply ensure everything is the way I pictured it in my head.
+A lot of my work, as an undergraduate, have been self- initiated at the [Robotics Club](http://students.iitk.ac.in/roboclub/) of our institute. The most significant of all is the Autonomous Underwater Vehicle (AUV) which my friends and I started working on in my freshman year. Last summer, I had the opportunity to work with [Prof. Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) and [Mr. Abhinav Valada](http://www2.informatik.uni-freiburg.de/~valada/). at the Autonomous Intelligent Systems Lab at the University of Freiburg, Germany, on using deep learning to predict landing sites from aerial images. My experience strengthened my interest to work in the field of robotics, and I am now planning to pursue higher studies in robot perception and manipulation.
 
-Currently, I am interested in working on motion planning problems, particularly on path planning for mobile robots and grasp planning. 
+Apart from academia, I tend to spend my time playing lawn tennis, running tracks or reading autobiographies. For a fact, I enjoy making reports and giving presentations. Often I end up spending hours to simply ensure everything is the way I pictured it in my head, which although makes the entire process slow and frustrating, it is still worth the efforts.
 
-In case you would like to reach out to me, e-mail me at <mailto: mayankm@iitk.ac.in>.
+Currently, I am interested in working on motion planning problems, particularly on path planning for mobile robots and grasp planning.
+
+In case you would like to reach out to me, feel free to e-mail me at <mailto: mayankm@iitk.ac.in>.
