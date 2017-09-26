@@ -44,11 +44,11 @@ documents:
 
 # navbar pages
 navbar:
+  - slug: about
+    title: About
   - slug: blog
     title: Blog
   - slug: projects
     title: Projects
   - slug: resume
     title: Resume
-  - slug: about
-    title: About

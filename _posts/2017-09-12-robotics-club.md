@@ -1,5 +1,5 @@
 ---
-title: Robotics Club: Why it exists?
+title: Robotics Club- Why it exists?
 layout: post
 date:   2017-9-12 10:46:52
 comments: true
