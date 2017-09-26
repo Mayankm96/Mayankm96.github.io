@@ -12,14 +12,9 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
     </script>
-<<<<<<< HEAD
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   </div>
 </aside>
-=======
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  {% endif %}
-{% endif %}
 
 {% if site.show_related_posts %}
   <h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>
@@ -27,9 +22,8 @@
     <div class="post ml2">
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
         <h4 class="post-title">{{ post.title }}</h4>
-        <p class="post-summary">{{ post.summary }}</p>
+        <p class="post-summary">{{ post.content | strip_html | truncatewords: 30 }}</p>
       </a>
     </div>
   {% endfor %}
->>>>>>> dae0d45d4503c1795a26b8cf2c6e1b6d48bd3be1
 {% endif %}
