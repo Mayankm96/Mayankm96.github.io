@@ -17,7 +17,7 @@ sass:
 # SEO settings
 title: Mayank Mittal
 description: "Personal website and blog"
-keywords: "mayank, iitk, robotics, blog, web"
+keywords: "mayank, iitk, robotics, blog, web, auv"
 url: http://Mayankm96.github.io
 baseurl: ""
 
@@ -29,7 +29,7 @@ disqus_site_shortname: "mayankm96"
 # Author settings
 author:
   name      : Mayank Mittal
-  job       : Junior in Electrical Engineering at IIT Kanpur
+  job       : Senior in Electrical Engineering at IIT Kanpur
   bio       : "Robotics Enthusiast"
   thumb     : /images/Mayank.jpg
   email     : mayankm@iitk.ac.in
