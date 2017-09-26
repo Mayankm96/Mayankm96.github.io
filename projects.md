@@ -9,7 +9,7 @@ title: Projects
 <p style="text-align:left;"> Funded by The Boeing Company <span style="float:right;"><small>July 2016- December 2016</small></span></p>
 Supervisors: [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/), [Prof. S. Kamle](http://www.iitk.ac.in/new/dr-s-kamle)
 
-<img style="float: left; padding: 0px 6px 0px 0px" src="/images/Projects/Boeing/Phase bots.jpg" width="45%">
+<img style="float: left; padding: 0px 6px 0px 6px" src="/images/Projects/Boeing/Phase bots.jpg" width="45%">
 
 In our current phase of the project (phase-VII), we are building an aerial and ground vehicle team of autonomus robots that shall perform the operation of bomb- disposal squad. The two robots seem to form a 'symbiotic' relationship in which they help overcome each others limitations and leverage their capabilities.
 
@@ -27,7 +27,7 @@ In order to increae our efficiency, the team of seven members has been divided i
 <p style="text-align:left;"> Funded by Dean of Research and Development, IIT Kanpur <span style="float:right;"><small>November 2014- ongoing</small></span></p>
 Supervisors: [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. Sachin Y. Shinde](http://www.iitk.ac.in/new/sachin-y-shinde)
 
-<img style="float: left; padding: 0px 6px 0px 0px" src="/images/Projects/AUV/AUV water.jpg" width="45%">
+<img style="float: left; padding: 0px 6px 0px 6px" src="/images/Projects/AUV/AUV water.jpg" width="45%">
 
 Initiated in 2014 by a team of undergraduates, as a project in Robotics Club, we aim to build an AUV as a platform for research in underwater robotics. The team has been divided into three sub-systems namely the mechanical, electrical and software subsystems, of which my major contributions has been towards the former two.
 
@@ -61,7 +61,7 @@ Towards the end of the project, I implmented the Extended Kalman Filter algorith
 <p style="text-align:left;">Mentor: <a href="http://iitk.ac.in/new/rathish-kumar-b-v">Prof. B. V. Rathish Kumar</a>
  <span style="float:right;"><small>December 2015</small></span></p>
 
-<img style="float: left; padding:0px 6px 0px 0px" src="/images/Projects/FEM.PNG" width="45%">
+<img style="float: left; padding:0px 6px 0px 6px" src="/images/Projects/FEM.PNG" width="45%">
 
 The motivation of the project lied in understanding the math behind Electrical Impedence Tomography (EIT), a medical imaging technique in which electrical conductivity across a part/tissue of the body is used to reconstruct a cross- section image of that part.
 
