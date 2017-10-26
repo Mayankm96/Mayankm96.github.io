@@ -47,8 +47,8 @@ documents:
 navbar:
   - slug: about
     title: About
-  - slug: blog
-    title: Blog
+  # - slug: blog
+  #   title: Blog
   - slug: projects
     title: Projects
   - slug: resume

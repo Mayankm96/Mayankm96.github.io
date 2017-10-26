@@ -70,7 +70,8 @@ The argument `b` is optional. If `b` is passed, [byobu](http://byobu.co/) is use
 
 ## 4. `ros::spin` vs `ros::spinonce`
 
-This one is kind of going to be from stack-overflow
+To read more about this you can check the answer over here or the ROS documentation here.
+
 4. actionlib vs puglinlib
 5. topics vs services
 6. rqt
