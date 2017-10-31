@@ -24,8 +24,8 @@ contact_note: #  You can even add a little note about which of these is the best
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: Roboto
-blog_description: a simple blog to share thoughts and knowledge
+blog_name: ""
+blog_description: ""
 
 # Pagination
 paginate: 4
@@ -80,7 +80,7 @@ gems:
 # Jekyll-Scholar
 scholar:
 
-  last_name: Einstein
+  last_name: Mittal
 
   style: apa
   locale: en
