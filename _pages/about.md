@@ -19,4 +19,4 @@ In the summers of 2017, I was a research intern with [Prof. Dr. Wolfram Burgard]
 
 Prior to this, I was working as an undergraduate researcher with [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/) in Boeing's University Relations Program at IIT Kanpur, [*Abhyast*](http://www.iitk.ac.in/dord/boeing/public/).
 
-Apart from my academic engangements, I enjoy playing lawn tennis and was a part of [IIT Kanpur's tennis team](http://www.iitk.ac.in/new/lawn-tennis). In my spare time, I tinker around with new hardware and design new things ranging from websites to actual robots.
+Apart from my academic engagements, I enjoy playing lawn tennis and was a part of [IIT Kanpur's tennis team](http://www.iitk.ac.in/new/lawn-tennis). In my spare time, I tinker around with new hardware and design new things ranging from websites to actual robots.
