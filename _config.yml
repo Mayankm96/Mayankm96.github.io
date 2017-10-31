@@ -1,34 +1,31 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-name: Your Name
-email: you@example.com
+name: Mayank Mittal
+email: mayankm@iitk.ac.in
 description: > # this means to ignore newlines until "url:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  A simple website for a Robotics Enthusiast.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
-url:  # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+url:  http://Mayankm96.github.io # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: # put your github username
+github_username: Mayankm96 # put your github username
 twitter_username: # put your twitter username
-linkedin_username: # put your linkedin username
+linkedin_username: mayankm-0096 # put your linkedin username
 scholar_authorid: # put your google scholar author id
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: #  You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: al-folio
-blog_description: a simple whitespace theme for academics
+blog_name: Roboto
+blog_description: a simple blog to share thoughts and knowledge
 
 # Pagination
 paginate: 4
@@ -41,7 +38,7 @@ text:
     older: 'Older'
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: mayankm-96 # put your disqus shortname
 
 # Optional features
 show_social_icons:  false
