@@ -13,7 +13,7 @@ news: true
 social: true
 ---
 
-I am presently a fourth year undergraduate in the Department of Electrical Engineering at the [Indian Institute of Technology, Kanpur (IITK)](http://www.iitk.ac.in/), India. My research interests lies in Robotics, Controls and Machine Learning.
+I am a fourth year undergraduate in the Department of Electrical Engineering at the [Indian Institute of Technology, Kanpur (IITK)](http://www.iitk.ac.in/), India. My research interests lies in Robotics, Controls and Machine Learning.
 
 In the summers of 2017, I was a research intern with [Prof. Dr. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) at University of Freiburg, Germany.
 
