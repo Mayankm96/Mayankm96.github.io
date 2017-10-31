@@ -12,6 +12,10 @@ url:  http://Mayankm96.github.io # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
+# google-analytics
+google_analytics: UA-92958928-1
+repo: http://github.com/Mayankm96
+
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
