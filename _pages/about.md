@@ -15,8 +15,6 @@ social: true
 
 I am presently a fourth year undergraduate in the Department of Electrical Engineering at the [Indian Institute of Technology, Kanpur (IITK)](http://www.iitk.ac.in/), India. My research interests lies in Robotics, Controls and Machine Learning.
 
-In the summers of 2017, I was a research intern with [Prof. Dr. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) at University of Freiburg, Germany. Prior to this, I have been working as an undergraduate researcher with [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/) in Boeing’s University Relations Program at IIT Kanpur.
+In the summers of 2017, I was a research intern with [Prof. Dr. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) at University of Freiburg, Germany.
 
-In my freshman year, my friends and I founded the [Autonomous Underwater Vehicle Team](https://auviitk.com) at IIT Kanpur. We achieved the first runners up place, on our debut, at the national underwater vehicle competition in 2016.
-
-I enjoy giving talks and sharing my knowledge with others. 
+Prior to this, I was working as an undergraduate researcher with [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/) in Boeing’s University Relations Program at IIT Kanpur, [*Abhyast*](http://www.iitk.ac.in/dord/boeing/public/).  
