@@ -3,14 +3,14 @@ layout: page
 permalink: /projects/
 title: Projects
 ---
-## Predicting Landing Sites from Aerial Images of Disaster Scenes
+## Predicting Landing Sites from Aerial Images
 
 <p style="text-align:left;"> DAAD Research Intern <span style="float:right;"><small>May - July 2017</small></span></p>
 Supervisors: [Prof. Dr. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/), [Abhinav Valada](http://www2.informatik.uni-freiburg.de/~valada/)
 
-<img style="float: left; padding: 0px 6px 0px 6px" src="/images/Projects/DAAD/alufr.png" >
+<img style="float: left; padding: 0px 6px 0px 6px" src="/images/Projects/DAAD/alufr.png" width="45%" >
 
-The project aims to design a novel solution to detect landing sites for a drone in a hostile environment by only using the input from a ground facing camera mounted on it. We use Convolutional Neural Networks in our approach for segmentation of the landing sites into landable and non-landable sites. The model is trained using a synthetic dataset created on Unreal Engine, using Microsoft's drone simulator AirSim.
+The project aimed to design a novel solution to predict landing sites for a drone flying in a disaster- affected zone. Using Convolutional Neural Networks, our approach segments a single camera input from the drone into landable and non-landable sites. We trained our model using a synthetic dataset created by us on Unreal Engine, using Microsoft's drone simulator *AirSim*.
 
 <hr>
 
@@ -39,7 +39,7 @@ Supervisors: [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. S
 
 <img style="float: left; padding: 0px 6px 0px 6px" src="/images/Projects/AUV/AUV water.jpg" width="45%">
 
-Initiated in 2014 by a team of undergraduates, as a project in Robotics Club, we aim to build an AUV as a platform for research in underwater robotics. The team has been divided into three sub-systems namely the mechanical, electrical and software subsystems, of which my major contributions has been towards the former two.
+Initiated in 2014 by a team of undergraduates, we aim to build an AUV as a platform for research in underwater robotics. The team has been divided into three sub-systems namely the mechanical, electrical and software subsystems, of which my major contributions has been towards the former two.
 
 We participated at the National Student Autonomous Vehicle (SAVe) Competition held at Chennai in December 2016, and achieved a second position on our debut.
 
