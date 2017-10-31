@@ -3,7 +3,7 @@ title: 'Robotics Club: Why it exists?'
 layout: post
 date:   2017-9-12 10:46:52
 comments: true
-categories: musings
+description: A few important reasons why student community groups help in moulding of a scientific mind.
 ---
 
 > *NOTE*: This post has been originally written as an invitation blog post for the [Robotics Club, IIT Kanpur](http://students.iitk.ac.in/roboclub/). It can checked out over [here](http://students.iitk.ac.in/roboclub/2017/09/07/Robotics-Club-Why-it-exists.html) along with several other interesting posts to read on.

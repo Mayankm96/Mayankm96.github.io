@@ -3,7 +3,7 @@ title: Hello World!
 layout: post
 date:   2017-8-3 1:46:52
 comments: true
-categories: musings
+description: A mandatory post where I introduce myself and the purpose of these blog sections.
 ---
 
 It has been a while since I have thought of writing a blog. The motivation first came when my friends and I were thinking of starting a blog for a [project](http://auviitk.com) to keep track of our progress. My friend [Shikher](http://shikherverma.com), a great developer himself, helped me with the initial push that I desperately needed to start things off by introducing me to [jekyll](https://jekyllrb.com/) and how easy it made writing blog posts.
