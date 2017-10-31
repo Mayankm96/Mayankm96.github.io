@@ -8,7 +8,7 @@ title: Projects
 <p style="text-align:left;"> DAAD Research Intern <span style="float:right;"><small>May - July 2017</small></span></p>
 Supervisors: [Prof. Dr. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/), [Abhinav Valada](http://www2.informatik.uni-freiburg.de/~valada/)
 
-<img style="float: left; padding: 0px 6px 0px 6px" src="/images/Projects/DAAD/alufr.png" width="45%" >
+<img style="float: left; padding: 0px 6px 0px 6px" src="/images/Projects/DAAD/alufr.png" >
 
 The project aimed to design a novel solution to predict landing sites for a drone flying in a disaster- affected zone. Using Convolutional Neural Networks, our approach segments a single camera input from the drone into landable and non-landable sites. We trained our model using a synthetic dataset created by us on Unreal Engine, using Microsoft's drone simulator *AirSim*.
 
