@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Deep Learning
+title: Predicting Landing Sites from Aerial Images
 description: DAAD Research Intern
-img: /assets/img/projects/intern2017/alufr.png
+img: /assets/img/projects/unifreiburg/alufr.png
 ---
 
 Supervisors: [Prof. Dr. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/), [Abhinav Valada](http://www2.informatik.uni-freiburg.de/~valada/)

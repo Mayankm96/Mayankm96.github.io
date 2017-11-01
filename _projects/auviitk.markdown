@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Autonomous Underwater Vehicle
+title: Autonomous Underwater Vehicle (AUV)
 description: Funded by DoRD, IIT Kanpur
 img: /assets/img/projects/auv/varun.jpg
 ---

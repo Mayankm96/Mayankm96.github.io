@@ -2,7 +2,7 @@
 layout: page
 title: Finite Element Analysis
 description: NPDE-TCA Intern
-img: /assets/img/projects/intern2016/fem.png
+img: /assets/img/projects/fem/fem.png
 ---
 
 Mentor: [Prof. B. V. Rathish Kumar](http://iitk.ac.in/new/rathish-kumar-b-v)

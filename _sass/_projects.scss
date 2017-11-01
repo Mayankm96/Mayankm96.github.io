@@ -14,14 +14,14 @@
         img {
             height: auto;
             position: relative;
-                left: -25%;
+                left: -20%;
                 top: -5%;
-            width: 500px;
+            width: 300px;
         }
 
         a {
             float: left;
-            height: 230px;
+            height: 250px;
             position: relative;
             width: 100%;
 
@@ -32,17 +32,18 @@
                 left: 0;
                 bottom: 0;
                 right: 0;
-                background: rgba(0,0,0,0.4);
+                background: rgba(0,0,0,0.6);
                 color: $grey-color-light;
-                padding: 40px;
+                padding: 30px;
                 text-align: center;
 
                 h1 {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     margin: 0;
                 }
 
                 p {
+                    font-size: 0.8rem;
                     color: $grey-color-light;
                 }
             }

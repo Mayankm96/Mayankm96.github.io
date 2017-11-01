@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Multi- Robot System
-description: Funded by Boeing
+title: Multi- Robot System for Bomb Disposal
+description: Funded by The Boeing Company
 img: /assets/img/projects/abhyast/phase_robots.jpg
 ---
 
