@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Finite Element Analysis
-description: NPDE-TCA Intern
+description: NPDE-TCA Winter Internship
 img: /assets/img/projects/fem/fem.png
 ---
 
@@ -13,5 +13,5 @@ The motivation of the project lied in understanding the math behind Electrical I
 My work required reviewing the two popular Finite Element Analysis (FEA) methods- Ritz and Glarenkin, and to solve boundary value problems in electromagnetism  in two- dimensions using adaptive mesh techniques. For instance, the image to the left is a simulation done using the tool FreeFEM++ to solve a two- dimensional axisymmetric problem in electromagnetism.
 
 <p align="center">
-    <a href="/assets/documents/NPDE-TCA FEM.pdf" class="btn btn-primary" target="_blank">View Notes</a>
+    <a class="button" href="/assets/documents/NPDE-TCA FEM.pdf"  target="_blank">View Notes</a>
 </p>

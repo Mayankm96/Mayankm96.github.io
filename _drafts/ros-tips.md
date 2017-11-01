@@ -4,20 +4,20 @@ layout: post
 date:   2017-10-07
 comments: true
 categories: tutorials
+description: Getting pass a beginner's understanding of ROS quickly and properly.
 ---
 
-Earlier people had to write a large amount of code ranging from low-level driver functions to high level control algorithms. This often made the code reuse nontrivial, and could make changing of even one sensor in the system a daunting task. The Robot Operating System (ROS) modular structure makes the hardware-software integration a piece of cake, and since it is open sourced it provdies a nice base to kick-off with implementation of several novel algorithms into your project.
+Earlier people had to write a large amount of code ranging from low-level driver functions to high level control algorithms. This often made code reuse nontrivial, and changing even one sensor in the system could be a daunting task. The Robot Operating System (ROS) modular structure simplifies hardware-software integration. Moreover, thanks to the large open sourced community, ROS provdies a nice base to start implementating several novel algorithms into your project.
 
-<img align="right" src="../images/Blog/ros-tips/copy-paste-meme.jpg" alt="copy-paste-meme" height="100" width="60">
+Although the [ROS tutorials]((http://wiki.ros.org/ROS/Tutorials)) introduces various core concepts of ROS, it takes a bit of hard work to develop a better comprehension of the entire [robot software architecture](http://www.ni.com/white-paper/13929/en/). Even after going through all of them, I struggled to write my first ROS node. *(Could be I am a slow learner? :P )* Having said that, the post highlights a few interesting ROS concepts and packages that a beginner might find useful in his journey as a robotic developer.
 
-Currently I am using the ROS framework extensively and developing a better comprehension of the entire [robot software architecture](http://www.ni.com/white-paper/13929/en/), all thanks to my recent projects. While I had started learning ROS through its tutorials [here](http://wiki.ros.org/ROS/Tutorials), I felt that it merely introduces the various core concepths in ROS such as the functioning of `master`, `nodes`, and `topics`. Even after going through all of them it took a while for me to write the first ROS node on my own. (It could also be I am a slow learner? :P ) Having said that, the post is mainly to highlight a few interesting ROS concepts and packages that a beginner should find useful.
-
-
-https://blog.acolyer.org/2015/11/02/ros-an-open-source-robot-operating-system/
-
-## 1. Implement. Imeplment. Implement
+## 1. Implement? Imeplment. Implement!
 
 This can't be emphasized enough but claiming to know ROS by just having done the tutorials is equivalent to saying that one has learned how to code after just seeing the syntax of a programming language. Learning can be faster is you have an application in mind. If you don't already, consider the following challenges:
+
+<div class="img_raw">
+<img class="wrap one" src="{{ site.baseurl }}/assets/img/blog/ros-tips/copy-paste-meme.jpg" alt="" title="How to become a Developer?"/>
+</div>
 
 * __For Hardware Lovers__: Using  your favorite microcontroller (say, Arduino), and write an arduino node that shall subscribe to a topic and use the information published there to perform some event such as actuation of a motor using PWM signals from the controler. (*Hint:* Take a look at the [rosserial_arduino](http://wiki.ros.org/rosserial) package)
 * __For Computer Vision Lovers:__ Using the OpenCV library, write a node which publishes the image frames from a camera onto a topic and then visualize the data being published through the image_view package. (*Hint:* Take a look at the [cv_bridge](http://wiki.ros.org/cv_bridge) package)
@@ -30,9 +30,11 @@ Running ROS commands through the terminal isn't really a bad practice. However, 
 
 Well, the one which I grew a fancy for is particularly the [`node_manager_fkie`](http://wiki.ros.org/node_manager_fkie). The interface makes it easier to launch bodes and monitor their health, and view the topics, services and parameters being published. Thus, saving the time to write terminal commands everytime.
 
-<img align="center" src="../images/Blog/ros-tips/node-manager.png" alt="sample-window" height="720" width="1280">
+<div class="img_true">
+    <img class="col three" src="{{ site.baseurl }}/assets/img/blog/ros-tips/node-manager.png" alt="" title="Node Manager GUI"/>
+</div>
 
-## 3. Running Commands through a Checklist
+## 3. Running via commands checklist
 
 Yes, it is possibe to do this through the [`screerun`](http://wiki.ros.org/screenrun) package in ROS. What it actually does is parse over the commands written in a YAML file and push them onto a *virtual* terminal, similar to as if you have typed them. Only those commands that end with `\015` (the octal literal for `Enter`) are executed.
 

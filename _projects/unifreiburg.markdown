@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Predicting Landing Sites from Aerial Images
-description: DAAD Research Intern
+description: DAAD Research Internship
 img: /assets/img/projects/unifreiburg/alufr.png
 ---
 

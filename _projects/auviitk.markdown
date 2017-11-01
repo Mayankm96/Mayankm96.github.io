@@ -13,9 +13,9 @@ Initiated in 2014 by undergraduates, we aim to build an AUV as a platform for re
 We participated at the National Student Autonomous Vehicle (SAVe) Competition held at Chennai in December 2016, and achieved a second position on our debut.
 
 <p align="center">
-    <a class="btn btn-primary" href="/assets/documents/AUV-IITK Report.pdf" target="_blank">View Report </a>
-    <a class="btn btn-primary" href="https://github.com/auv-iitk/" target="_blank">View Code</a>
-    <a class="btn btn-primary" href="http://auviitk.com/" target="_blank">Visit Website </a>
+    <a class="button" href="/assets/documents/AUV-IITK Report.pdf" target="_blank">View Report </a>
+    <a class="button" href="https://github.com/auv-iitk/" target="_blank">View Code</a>
+    <a class="button" href="http://auviitk.com/" target="_blank">Visit Website </a>
 </p>
 
 <br/>
