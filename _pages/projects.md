@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A growing collection of my cool projects.
 ---
 
 {% for project in site.projects %}
@@ -16,17 +16,12 @@ description: A growing collection of your cool projects.
         {% else %}
         <div class="thumbnail blankbox"></div>
         {% endif %}    
-        <!-- <span>
+        <span>
             <h1>{{ project.title }}</h1>
             <br/>
             <p>{{ project.description }}</p>
-        </span> -->
+        </span>
         </a>
-    </div>
-    <div class="">
-      <h1>{{ project.title }}</h1>
-      <br/>
-      <p>{{ project.description }}</p>
     </div>
 </div>
 {% else %}
