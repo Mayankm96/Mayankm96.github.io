@@ -11,7 +11,7 @@ Earlier people had to write a large amount of code ranging from low-level driver
 
 Although the [ROS tutorials]((http://wiki.ros.org/ROS/Tutorials)) introduces various core concepts of ROS, it takes a bit of hard work to develop a better comprehension of the entire [robot software architecture](http://www.ni.com/white-paper/13929/en/). Even after going through all of them, I struggled to write my first ROS node. *(Could be I am a slow learner? :P )* Having said that, the post highlights a few interesting ROS concepts and packages that a beginner might find useful in his journey as a robotic developer.
 
-## 1. Implement? Imeplment. Implement!
+## 1. Implement. Imeplment. Implement.
 
 This can't be emphasized enough but claiming to know ROS by just having done the tutorials is equivalent to saying that one has learned how to code after just seeing the syntax of a programming language. Learning can be faster is you have an application in mind. If you don't already, consider the following challenges:
 
@@ -34,11 +34,11 @@ Well, the one which I grew a fancy for is particularly the [`node_manager_fkie`]
     <img class="col three" src="{{ site.baseurl }}/assets/img/blog/ros-tips/node-manager.png" alt="" title="Node Manager GUI"/>
 </div>
 
-## 3. Running via commands checklist
+## 3. Running commands via checklist
 
-Yes, it is possibe to do this through the [`screerun`](http://wiki.ros.org/screenrun) package in ROS. What it actually does is parse over the commands written in a YAML file and push them onto a *virtual* terminal, similar to as if you have typed them. Only those commands that end with `\015` (the octal literal for `Enter`) are executed.
+Yes, it is possibe to do this through the [`screerun`](http://wiki.ros.org/screenrun) package in ROS. What it actually does is parse over the commands written in a YAML file and push them onto a *virtual* terminal as if you have typed them. However, only those commands that end with `\015` (the octal literal for `Enter`) are executed.
 
-This comes in handy when you have to deal with large project repostiories. Although running nodes by using a launch files is really common (and recommended), the `screenrun` package seem to provide more flexibility over the general terminals commands that one might need to execute.
+This comes in handy when you have to deal with large project repostiories. Although running nodes by using launch files is common (and recommended), the `screenrun` package provides more flexibility over the general terminals commands that one might need to execute.
 
 A sample config file `config.yaml` is as follows:
 ```yaml
@@ -59,7 +59,7 @@ programs:
 
 ```
 
-To run the package you could either use `rosrun screenrun screenrun [b]` or launch it through a launch file:
+To run the node, you could either use `rosrun screenrun screenrun [b]` or launch it through a launch file:
 ```xml
 <launch>
   <node name="screenrun" pkg="screenrun" type="screenrun" args="b" output="screen">
@@ -68,9 +68,26 @@ To run the package you could either use `rosrun screenrun screenrun [b]` or laun
 </launch>
 ```
 
-The argument `b` is optional. If `b` is passed, [byobu](http://byobu.co/) is used instead of [screen](https://www.gnu.org/software/screen/).
+__NOTE:__ The argument `b` is optional. If `b` is passed, [byobu](http://byobu.co/) is used instead of [screen](https://www.gnu.org/software/screen/).
 
-## 4. `ros::spin` vs `ros::spinonce`
+## 4. Different Naming Styles
+
+In ROS, nodes, topics, services and paramters are referred to as graph resources. Each of these are identified with a unique name. In general, there are four different different naming systems for graph resources names:
+
+1. __Global Names:__
+
+    These require no additional resolving by ROS to decide the resource being refered to. They can directly be used as arguments to command line tools or inside a node.
+
+    * A leading slash `/` identifies the name as a global name.
+    * A name can have a sequence of zero or more namespaces. A namespace helps in grouping related graph resources together.
+    * A global name always consist of a base name that describes the resource itself.
+
+    *Example:* `/turtle1/cmd_vel`, `/turtle1/pose` belong to the namespace `turtle1` with the base names `cmd_vel` and `pose`
+
+
+2. __Relative Names:__
+
+## 5. `ros::spin` vs `ros::spinonce`
 
 To read more about this you can check the answer over here or the ROS documentation here.
 
