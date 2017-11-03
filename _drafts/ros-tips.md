@@ -41,7 +41,7 @@ Yes, it is possibe to do this through the [`screerun`](http://wiki.ros.org/scree
 This comes in handy when you have to deal with large project repostiories. Although running nodes by using launch files is common (and recommended), the `screenrun` package provides more flexibility over the general terminals commands that one might need to execute.
 
 A sample config file `config.yaml` is as follows:
-```yaml
+{% highlight YAML %}
 programs:
   -
     name: 2d-mapping
@@ -57,46 +57,60 @@ programs:
     commands:
       - rosbag record --duration=30 /map /particlecloud /tf
 
-```
+{% endhighlight %}
+
 
 To run the node, you could either use `rosrun screenrun screenrun [b]` or launch it through a launch file:
-```xml
+{% highlight XML %}
 <launch>
   <node name="screenrun" pkg="screenrun" type="screenrun" args="b" output="screen">
     <rosparam file="$(find <package-name>)/screenrun/config.yaml" command="load"/>
   </node>
 </launch>
-```
+{% endhighlight %}
+
 
 __NOTE:__ The argument `b` is optional. If `b` is passed, [byobu](http://byobu.co/) is used instead of [screen](https://www.gnu.org/software/screen/).
 
 ## 4. Different Naming Styles
 
-In ROS, nodes, topics, services and paramters are referred to as graph resources. Each of these are identified with a unique name. In general, there are four different different naming systems for graph resources names:
+Nodes, topics, services and paramters are referred to as graph resources in ROS. Each of these are identified with a unique graph resource name within the ROS computation graph. The naming scheme is hierarchial in natureIn general, there are three different naming systems for graph resources names:
 
-1. __Global Names:__
+1. __Global Name:__
+    * Begins with leading slash (`/`)
+    * Requires no additional resolving to decide the resource being referred to
+    * Comprises of sequence of zero or more namespaces and a base name. The namespace helps in grouping related graph resources together while the base name describes the resource itself
 
-    These require no additional resolving by ROS to decide the resource being refered to. They can directly be used as arguments to command line tools or inside a node.
-
-    * A leading slash `/` identifies the name as a global name.
-    * A name can have a sequence of zero or more namespaces. A namespace helps in grouping related graph resources together.
-    * A global name always consist of a base name that describes the resource itself.
-
-    *Example:* `/turtle1/cmd_vel`, `/turtle1/pose` belong to the namespace `turtle1` with the base names `cmd_vel` and `pose`
+    *Examples:* `/turtle1/cmd_vel`, `/turtle1/pose` belong to the namespace `turtle1` with the base names `cmd_vel` and `pose` respectively
 
 
-2. __Relative Names:__
+2. __Relative Name:__
+    * Does not have any special character at the start
+    * Relies on ROS client library to resolve the name into a global name
+    * Resolving done by attaching the name of default namespace to the front of relative name
+    * Provides flexibilty over organization of system and helps in avoiding name clashes when groups of same nodes are to be launched
 
-## 5. `ros::spin` vs `ros::spinonce`
+    *Examples:* `cmd_vel`, `camera/rgb/img_raw` are relative names. To map to the global name, suppose name of default namespace is `/alpha`. Conseqently the global names would `/alpha/cmd_vel` and `/alpha/camera/rgb/img_raw` respectively.
 
-To read more about this you can check the answer over here or the ROS documentation here.
+3. __Private Name:__
+    * Begins with tilde (`~`) character
+    * Relies on ROS client library to resolve the name  into a global name
+    * Resolving is done similar to that for relative name, however the name of the node is used as namespace
+    * Often used for setting paramters to a node since a node's namespace is not required to be shared
+
+    *Example:* For a node with global name `/zonePublisher`, if private name is `~land_site` then its global name would become `/zonePublisher/land_site`
+
+__NOTE:__ To know more about graph resource names, refer to the book chapter [here](https://www.cse.sc.edu/~jokane/agitr/agitr-letter-names.pdf).
+
+## 5. Message Filters
 
 4. actionlib vs puglinlib
+5. `ros::spin` vs `ros::spinonce`
 5. topics vs services
+To read more about this you can check the answer over here or the ROS documentation here.
 6. rqt
 7. nodes vs nodelets
 8. ROS Network
-9. message::filters
 10. diagnostic for your robot
 11. usb_cam package
 12. Using header stamps
