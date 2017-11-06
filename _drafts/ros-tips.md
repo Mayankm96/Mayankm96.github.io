@@ -120,16 +120,33 @@ Lorenz's answer [here](https://answers.ros.org/question/11834/when-should-i-use-
 | Used for continuous data streams (like sensor data, robot state) | Used for remote procedure calls that terminate quickly, mainly query based actions (like performing inverse kinematics calculation) | Used for any discrete behavior that moves a robot or that runs for a long time and feedback is required during execution |
 | Continuous data flow is allowed with many-to-many connections feasible | Simple blocking call for processing requests | More complex non-blocking background processing for real-world actions |
 
-
-## 7. Threading in ROS Processes
+## 7. Single Threading in ROS Processes
 
 Understanding `ros::spin()` and `ros::spinOnce()` is important when you start writing your nodes. Quoting Patrick's
 [answer](https://answers.ros.org/question/11887/significance-of-rosspinonce/) for significance of `ros::spinOnce()`
 
->In the background, ROS monitors socket connections for any topics you've subscribed to. When a message arrives, ROS pushes the subscriber callback onto a queue. It does not call it immediately. ROS only processes the callbacks when you tell it to with `ros::spinOnce()`. This is all part of roscpp's *"toolbox, not framework"* philosophy. roscpp does not mandate a particular threading model for your node, nor does it demand to wrap your `main()`. `ros::spin()` is purely a convenience, a main loop for ROS that repeatedly calls `ros::spinOnce()` until your node is shut down.
+>In the background, ROS monitors socket connections for any topics you've subscribed to. When a message arrives, ROS pushes the subscriber callback onto a queue. It does not call it immediately. ROS only processes the callbacks when you tell it to with `ros::spinOnce()`. This is all part of roscpp's *"toolbox, not framework"* philosophy. [roscpp](http://wiki.ros.org/roscpp) does not mandate a particular threading model for your node, nor does it demand to wrap your `main()`. `ros::spin()` is purely a convenience, a main loop for ROS that repeatedly calls `ros::spinOnce()` until your node is shut down.
 
-If we dig a bit deeper through the overview of [callbacks and spinning](http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning), 
+If we dig a bit deeper through documentation on [callbacks and spinning](http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning), the answer by Patrick is verified through the code snippets given below.
 
+* `ros::spin()` implementation:
+{% highlight C++ %}
+#include <ros/callback_queue.h>
+ros::NodeHandle n;
+
+while (ros::ok()) {
+  ros::getGlobalCallbackQueue()->callAvailable(ros::WallDuration(0.1));
+}
+{% endhighlight %}
+
+* `ros::spinOnce()` implementation:
+{% highlight C++ %}
+#include <ros/callback_queue.h>
+
+ros::getGlobalCallbackQueue()->callAvailable(ros::WallDuration(0));
+{% endhighlight %}
+
+In above procedures, the call to `ros::getGlobalCallbackQueue()` gets the global queue in which all callbacks are assigned to, by default. The `callAvailable()` method takes everything present in this queue and invokes all of them. It has an optional timeout argument given above using `ros::WallDuration(..)`. If there are no callbacks in the queue and the timeout is set to 0, then the method returns immediately.
 
 ## 8. Message Filters
 
