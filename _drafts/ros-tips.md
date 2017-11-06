@@ -1,5 +1,5 @@
 ---
-title: Useful Tips for ROS Newbies
+title: 9-Fine Tips for ROS Users
 layout: post
 date:   2017-10-07
 comments: true
@@ -7,11 +7,13 @@ categories: tutorials
 description: Getting pass a beginner's understanding of ROS quickly and properly.
 ---
 
-Earlier people had to write a large amount of code ranging from low-level driver functions to high level control algorithms. This often made code reuse nontrivial, and changing even one sensor in the system could be a daunting task. The Robot Operating System (ROS) modular structure simplifies hardware-software integration. Moreover, thanks to the large open sourced community, ROS provdies a nice base to start implementating several novel algorithms into your project.
+Earlier people had to write a large amount of code ranging from low-level driver functions to high level control algorithms for their robots. I too experienced this *pain* when I started working on the [underwater vehicle](https://auviitk.com) project in my undergraduate university. This approach sometimes made changing even one sensor on our system a daunting task. However, things changed when we started using __Robot Operating System (ROS)__ as the framework for our robot's software stack. The large open sourced community for ROS has made it possible to implement novel algorithms on the robot without worrying too much about the hardware-software integration.
 
-Although the [ROS tutorials]((http://wiki.ros.org/ROS/Tutorials)) introduces various core concepts of ROS, it takes a bit of hard work to develop a better comprehension of the entire [robot software architecture](http://www.ni.com/white-paper/13929/en/). Even after going through all of them, I struggled to write my first ROS node. *(Could be I am a slow learner? :P )* Having said that, the post highlights a few interesting ROS concepts and packages that a beginner might find useful in his journey as a robotic developer.
+Although the [ROS tutorials]((http://wiki.ros.org/ROS/Tutorials)) introduces various core concepts of ROS, it takes a bit of hard work to develop a better comprehension of the entire [robot software architecture](http://www.ni.com/white-paper/13929/en/). Even after going through tutorials, I struggled to write my first ROS node. *(Could be I am a slow learner? :P )* Having said that, the post highlights a few interesting ROS concepts and packages that a beginner might find useful in his journey as a robotics developer.
 
-## 1. Implement. Imeplment. Implement.
+> __DISCLAIMER:__ Some of the points have been taken from [ROS Answers](http://answers.ros.org/) and [ROS Documentation](http://wiki.ros.org/). The blog mainly aims to put all the relevant sources together for a beginner to learn about this amazing framework smoothly.
+
+## 1. Implement. Impelment. Implement.
 
 This can't be emphasized enough but claiming to know ROS by just having done the tutorials is equivalent to saying that one has learned how to code after just seeing the syntax of a programming language. Learning can be faster is you have an application in mind. If you don't already, consider the following challenges:
 
@@ -74,7 +76,7 @@ __NOTE:__ The argument `b` is optional. If `b` is passed, [byobu](http://byobu.c
 
 ## 4. Different Naming Styles
 
-Nodes, topics, services and paramters are referred to as graph resources in ROS. Each of these are identified with a unique graph resource name within the ROS computation graph. The naming scheme is hierarchial in natureIn general, there are three different naming systems for graph resources names:
+Nodes, topics, services and paramters are referred to as graph resources in ROS. Each of these are identified with a unique graph resource name within the ROS computation graph. The naming scheme is hierarchial in nature. In general, there are three different naming systems followed:
 
 1. __Global Name:__
     * Begins with leading slash (`/`)
@@ -95,22 +97,40 @@ Nodes, topics, services and paramters are referred to as graph resources in ROS.
 3. __Private Name:__
     * Begins with tilde (`~`) character
     * Relies on ROS client library to resolve the name  into a global name
-    * Resolving is done similar to that for relative name, however the name of the node is used as namespace
+    * Resolving is done similar to that for relative name, however the name of the node is used as namespace onstead of default namespace
     * Often used for setting paramters to a node since a node's namespace is not required to be shared
 
-    *Example:* For a node with global name `/zonePublisher`, if private name is `~land_site` then its global name would become `/zonePublisher/land_site`
+    *Example:* For a node with global name `/zonePublisher`, if it has a private paramter `~land_site` then its global name would become `/zonePublisher/land_site`
 
 __NOTE:__ To know more about graph resource names, refer to the book chapter [here](https://www.cse.sc.edu/~jokane/agitr/agitr-letter-names.pdf).
 
-## 5. Message Filters
 
-4. actionlib vs puglinlib
-5. `ros::spin` vs `ros::spinonce`
-5. topics vs services
-To read more about this you can check the answer over here or the ROS documentation here.
-6. rqt
-7. nodes vs nodelets
-8. ROS Network
-10. diagnostic for your robot
-11. usb_cam package
-12. Using header stamps
+## 5. Nodes vs Nodelets
+
+Referring to the answer [here](https://answers.ros.org/question/230972/what-is-a-nodelet/), in ROS each node runs as a single process. The nodes communicate between each other using the [TCPROS](http://wiki.ros.org/ROS/TCPROS) protocol (which uses the standard TCP/IP Sockets). This usually suffices for most of the data transer that needs to be done between nodes. However, when data is large (such as laser scans or point clouds), it is faster to send a pointer to the data location instead of sending the entire data in form of packets through the TCP protocol. In cases like these, nodelets prove to be useful.
+
+Nodelets allow to run multiple algorithms in a thread, with each algorithm running as a thread in the process. [`roscpp`](http://wiki.ros.org/roscpp/Overview/Publishers%20and%20Subscribers#Intraprocess_Publishing) provides optimizations that allows pointers to be passed between publisher and subscriber calls within a node without the need of copying data from one memory location to another (also called zero copying). To learn more about how to use nodelets, feel free to check the ROS documentation for it [here](http://wiki.ros.org/nodelet).
+
+## 6. Topics vs Services vs Actionlib
+
+Lorenz's answer [here](https://answers.ros.org/question/11834/when-should-i-use-topics-vs-services-vs-actionlib-actions-vs-dynamic_reconfigure/) provides a concise overview of how topics, services and actionlib are to be used. The table below briefly describes when these three approaches are used. More information about them is available in the ROSWiki documentation on [Communication Patterns](http://wiki.ros.org/ROS/Patterns/Communication#Communication_via_Topics_vs_Services_vs_X).
+
+| Topics | Services | Actionlib |
+|:----------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|
+| Used for continuous data streams (like sensor data, robot state) | Used for remote procedure calls that terminate quickly, mainly query based actions (like performing inverse kinematics calculation) | Used for any discrete behavior that moves a robot or that runs for a long time and feedback is required during execution |
+| Continuous data flow is allowed with many-to-many connections feasible | Simple blocking call for processing requests | More complex non-blocking background processing for real-world actions |
+
+
+## 7. Threading in ROS Processes
+
+Understanding `ros::spin()` and `ros::spinOnce()` is important when you start writing your nodes. Quoting Patrick's
+[answer](https://answers.ros.org/question/11887/significance-of-rosspinonce/) for significance of `ros::spinOnce()`
+
+>In the background, ROS monitors socket connections for any topics you've subscribed to. When a message arrives, ROS pushes the subscriber callback onto a queue. It does not call it immediately. ROS only processes the callbacks when you tell it to with `ros::spinOnce()`. This is all part of roscpp's *"toolbox, not framework"* philosophy. roscpp does not mandate a particular threading model for your node, nor does it demand to wrap your `main()`. `ros::spin()` is purely a convenience, a main loop for ROS that repeatedly calls `ros::spinOnce()` until your node is shut down.
+
+If we dig a bit deeper through the overview of [callbacks and spinning](http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning), 
+
+
+## 8. Message Filters
+
+## 9. Diagnostics for Your Robot
