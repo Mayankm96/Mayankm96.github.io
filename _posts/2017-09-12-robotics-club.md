@@ -6,7 +6,7 @@ comments: true
 description: A few important reasons why student community groups help in moulding a scientific mind.
 ---
 
-> *NOTE*: An invitation blog post for [Robotics Club, IIT Kanpur](http://students.iitk.ac.in/roboclub/). It can checked out [here](http://students.iitk.ac.in/roboclub/2017/09/07/Robotics-Club-Why-it-exists.html) along with other interesting posts.
+> *NOTE*: An invitation blog post written for [Robotics Club, IIT Kanpur](http://students.iitk.ac.in/roboclub/). It can checked out [here](http://students.iitk.ac.in/roboclub/2017/09/07/Robotics-Club-Why-it-exists.html) along with other interesting posts.
 
 The whitewashed room in Hall of Residence- II, equipped with big machines and conference tables, was designed a long time ago to cater to the needs of tinkering minds in the Institute. A lot of efforts by the students and alumni have gone into ensuring that this room, which belongs to the Robotics Club, would be a place where people would come together to explore new projects and test their ideas. Such is the motto of the Science and Technology Council as well, of which the club has been a part of its existence.
 
