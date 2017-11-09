@@ -5,12 +5,13 @@ description: Funded by DoRD, IIT Kanpur
 img: /assets/img/projects/auv/varun.jpg
 ---
 
-Supervisors: [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. Sachin Y. Shinde](http://www.iitk.ac.in/new/sachin-y-shinde)
+*Supervisors:* [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. Sachin Y. Shinde](http://www.iitk.ac.in/new/sachin-y-shinde)
 
+AUVs are unoccupied submersibles without tethers which are powered using on- board batteries, fuel cells, or other energy resources. They are intended to carry out programmed missions with little or no direct human intervention, and may communicate with operators intermittently using acoustic links, satellite communication (SATCOM) systems.
 
-Initiated in 2014 by undergraduates, we aim to build an AUV as a platform for research in underwater robotics. The team has been divided into three sub-systems namely the mechanical, electrical and software subsystems, of which my major contributions has been towards the former two.
+As a student- initiated project at IIT Kanpur, the project aims to build marine systems to serve as a platform for research in underwater robotics at the institute and create affliations with industries looking for marine technology solutions. As one of the founding members of the team, I have had the opportunity to work in various domains of the project.
 
-We participated at the National Student Autonomous Vehicle (SAVe) Competition held at Chennai in December 2016, and achieved a second position on our debut.
+We participated with our first vehicle, *Varun*, at the National Student Autonomous Vehicle (SAVe) Competition in December 2016, and achieved the runners-up position on our debut.
 
 <p align="center">
     <a class="button" href="/assets/documents/projects/AUV-IITK Report.pdf" target="_blank">View Report </a>
