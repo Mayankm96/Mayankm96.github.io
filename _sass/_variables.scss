@@ -30,6 +30,7 @@ $abbr-border-bottom: 1px black dotted;
 // Page width
 $measure-width: 42rem !default;
 
+
 // Viewport widths
 $viewport-small: 32em;
 $viewport-medium: 48em;
@@ -69,7 +70,7 @@ $darken-2:          rgba(#000,.125) !default;
 $darken-3:          rgba(#000,.25) !default;
 $darken-4:          rgba(#000,.5) !default;
 
-$theme-color:       $blue-1;
+$theme-color:       $purple;
 $code-color:        $dark-gray;
 $text-color:        $mid-gray;
 $background-color:  white;
@@ -158,3 +159,6 @@ $img_spacing: 5px;
 $img-height: 275px;
 $caption-font-size: 12px;
 $caption-color: #aaa;
+
+/* add on-palm to be consistent with other jekyll theme media queries */
+$on-palm:  600px !default;
