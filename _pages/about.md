@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Mayank</strong> Mittal
-description: Senior Undergraduate | Indian Institute of Technology (IIT) Kanpur
+description: Roboticist | Eidgenössische Technische Hochschule (ETH) Zurich
 
 profile:
   align: right
@@ -13,10 +13,8 @@ news: true
 social: true
 ---
 
-I am a fourth year undergraduate in the Department of Electrical Engineering at [IIT Kanpur](http://www.iitk.ac.in/), India. My research interests lie in Robotics, Controls and Machine Learning.
+I will be starting my Masters programme on Robotics, Systems and Controls at [ETH Zurich](http://www.master-robotics.ethz.ch/) from fall 2018. My research interests lie in vision-based navigation and control systems.
 
-In the summers of 2017, I was a research intern with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) at University of Freiburg, Germany.
-
-Prior to this, I was working as an undergraduate researcher with [Prof. Shantanu Bhattacharya](http://home.iitk.ac.in/~bhattacs/) in Boeing's University Relations Program at IIT Kanpur, [*Abhyast*](http://www.iitk.ac.in/dord/boeing/public/).
+I graduated from [IIT Kanpur](http://www.iitk.ac.in/) in May 2018 with a Bachelors in Electrical Engineering at , India. In the summers of 2017, I was a research intern with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) at University of Freiburg, Germany.Prior to this, During my undergraduate programme, I worked on the designing and development of autonomous underwater vehicles (AUV) and founded the [AUV team](https://auviitk.com) at IIT Kanpur.
 
 Apart from my academic engagements, I enjoy playing lawn tennis and was a part of [IIT Kanpur's tennis team](http://www.iitk.ac.in/new/lawn-tennis). In my spare time, I love tinkering around with new hardware and designing new things especially robots.
