@@ -47,7 +47,7 @@ description: A collection of my research activities.
 
 {% endfor %}
 
-## Other relevant projects
+### other relevant projects
 
 * Survey on Variational Autoencoders for Bayesian Inference ([report](/assets/documents/projects/cs698-report.pdf))
 * Visual Odometry using careful Feature Selection and Tracking ([report](/assets/documents/projects/ee698-report.pdf), [code](https://github.com/Mayankm96/Stereo-Odometry-SOFT))
