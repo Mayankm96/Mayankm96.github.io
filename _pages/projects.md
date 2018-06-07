@@ -46,3 +46,10 @@ description: A collection of my research activities.
 {% endif %}
 
 {% endfor %}
+
+## Other relevant projects
+
+* Survey on Variational Autoencoders for Bayesian Inference ([report](/assets/documents/projects/cs698-report.pdf))
+* Visual Odometry using careful Feature Selection and Tracking ([report](/assets/documents/projects/ee698-report.pdf), [code](https://github.com/Mayankm96/Stereo-Odometry-SOFT))
+* MATLAB based GUI for Motion Planning ([code](https://github.com/Mayankm96/Motion-Planning-GUI))
+* Failure Handling in Swarm of Quadrotors ([report](/assets/documents/projects/cs637-report.pdf))

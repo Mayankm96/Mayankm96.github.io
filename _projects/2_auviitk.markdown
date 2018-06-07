@@ -5,7 +5,7 @@ description: Funded by DoRD, IIT Kanpur
 img: /assets/img/projects/auv/varun.jpg
 ---
 
-*Supervisors:* [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/), [Prof. Sachin Y. Shinde](http://www.iitk.ac.in/new/sachin-y-shinde)
+*Supervisors:* [Prof. Mangal Kothari](https://www.iitk.ac.in/aero/mangal/), [Prof. K. S. Venkatesh](http://home.iitk.ac.in/~venkats/)
 
 AUVs are unoccupied submersibles without tethers which are powered using on- board batteries, fuel cells, or other energy resources. They are intended to carry out programmed missions with little or no direct human intervention, and may communicate with operators intermittently using acoustic links, satellite communication (SATCOM) systems.
 
