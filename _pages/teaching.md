@@ -8,7 +8,7 @@ description: Classes, workshops, and teaching materials.
 * (Winter 2017: TA, guest lecturer): [AE640A: Autonomous Navigation](https://ae640a.github.io) with [Mangal Kothari](https://www.iitk.ac.in/aero/mangal/)
 
     * preparing course materials and assignments
-    * guest lecturer on system integration using ROS ([slides](/assets/documents/teaching/ae640a/ae640a_lecture1.pdf)), robot simulation using Gazebo ([slides](/assets/documents/teaching/ae640a/ae640a_lecture2.pdf), mathematical foundation for Robotics ([slides](/assets/documents/teaching/ae640a/ae640a_lecture9.pdf)), and non-parametric filters for localization
+    * guest lecturer on system integration using ROS ([slides](/assets/documents/teaching/ae640a/ae640a_lecture1.pdf)), robot simulation using Gazebo ([slides](/assets/documents/teaching/ae640a/ae640a_lecture2.pdf)), mathematical foundation for Robotics ([slides](/assets/documents/teaching/ae640a/ae640a_lecture9.pdf)), and non-parametric filters for localization
 
 ### tutorials
 
