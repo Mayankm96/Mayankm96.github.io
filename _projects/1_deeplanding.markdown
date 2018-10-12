@@ -5,14 +5,21 @@ description: DAAD Research Internship
 img: /assets/img/projects/deeplanding/Bild_FOUNT2.jpg
 ---
 
-*Supervisors:* [Prof. Dr. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/), [Abhinav Valada](http://www2.informatik.uni-freiburg.de/~valada/)
+*Duration:* May'17 - August'18
 
-The work done is a part of ['FOUNT2: Flying localization system for rescuing and recovering victims'](https://www.sifo.de/de/fount2-fliegendes-lokalisierungssystem-fuer-die-rettung-und-bergung-von-verschuetteten-2275.html) project at the Univeristy of Freiburg, Germany.
+*Supervisor:* [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/)
 
-In this project, we are designing a novel solution to predict landing sites for a drone performing rescue operations in a disaster- affected zone. Our approach uses convolutional neural networks to perform pixel- wise segmentation of the monocular camera input from the drone into landable and non-landable sites. We train our model using a synthetic dataset created by us using Microsoft's drone simulator [*AirSim*](https://github.com/Microsoft/AirSim).
+Unmanned Aerial Vehicles (UAVs) equipped with bioradars are a life-saving technology that can enable identification of survivors under collapsed buildings in the aftermath of natural disasters such as earthquakes or gas explosions. However, these UAVs have to be able to autonomously land on debris piles in order to accurately locate the survivors. This problem is extremely challenging as the structure of these debris piles is often unknown and no prior knowledge can be leveraged. In this work, we propose a computationally efficient system that is able to reliably identify safe landing sites and autonomously perform the landing maneuver.
 
 <p align="center">
     <a class="button" href="/assets/documents/projects/Projektumriss_FOUNT2.pdf" target="_blank">View Outline <i>(in German)</i></a>
+    <a class="button" href="https://arxiv.org/abs/1809.05700" target="_blank">View Paper</a>
 </p>
 
-> __NOTE:__ Since this is an ongoing work, a detailed description of this project cannot be provided.
+### Detection Algorithm
+
+Our algorithm computes costmaps based on several hazard factors including terrain flatness, steepness, depth accuracy and energy consumption information. We first estimate dense candidate landing sites from the resulting costmap and then employ clustering to group neighboring sites into a safe landing region. Finally, a minimum-jerk trajectory is computed for landing considering the surrounding obstacles and the UAV dynamics. We demonstrate the efficacy of our system using experiments from a city scale hyperrealistic simulation environment and in real-world scenarios with collapsed buildings.
+
+<div>
+    <img class="col three" height="50%" width="50%" src="{{ site.baseurl }}/assets/img/projects/deeplanding/landing_algo.svg" alt="" title="Landing Algorithm"/>
+</div>
