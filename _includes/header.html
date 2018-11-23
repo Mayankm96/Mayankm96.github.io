@@ -28,13 +28,6 @@
         <!-- Blog -->
         <!-- <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a> -->
 
-        <!-- Pages -->
-        {% for page in site.pages %}
-          {% if page.title and page.url != "/" %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-
         <!-- CV link -->
         <a class="page-link" href="{{ '/assets/documents/Mayank_CV.pdf' | prepend: site.baseurl | prepend: site.url }}">vitae</a>
 
