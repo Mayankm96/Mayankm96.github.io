@@ -14,11 +14,11 @@ social: true
 years: [2018]
 ---
 
-I am a graduate student in Robotics, Systems and Controls program at [ETH Zurich](http://www.master-robotics.ethz.ch/). My research interests lie in designing learning-based systems for navigation and manipulation in unknown environments. I am currently working at [Robotic Systems Lab](http://www.rsl.ethz.ch/) under [Prof. Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911) on deploying reinforcement learning algorithms into robots.
+I am a graduate student in Robotics, Systems and Controls program at [ETH Zurich](http://www.master-robotics.ethz.ch/). My research interests lie in designing learning-based systems for navigation and manipulation in unknown environments. I am currently working at [Robotic Systems Lab](http://www.rsl.ethz.ch/) under [Prof. Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911) on learning locomotion-manipulation policies for ANYmal.
 
-I graduated from [IIT Kanpur](http://www.iitk.ac.in/) in May 2018 with a Bachelors in Electrical Engineering. In the summer of 2017, I worked with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) on predicting landing sites from aerial images. During my undergraduate program, I co-founded the [AUV team](https://auviitk.com) for marine robotics and worked on various mecahnical, electrical and software aspects of the project.
+I graduated from [IIT Kanpur](http://www.iitk.ac.in/) in May 2018 with a Bachelors in Electrical Engineering. In the summer of 2017, I worked with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) on predicting landing sites from aerial images. During my undergraduate program, I co-founded the [AUV team](https://auviitk.com) for marine robotics.
 
-Apart from my academic engagements, I enjoy playing lawn tennis, swimming and trying out new cuisines! In my spare time, I often end up procrastinating on GitHub or reading about new hardware.
+Apart from my academic engagements, I enjoy playing lawn tennis, and running! In my spare time, I often end up on GitHub _(a good replacement to other form of social media)_.
 
 <div class="post">
 
@@ -93,8 +93,8 @@ Apart from my academic engagements, I enjoy playing lawn tennis, swimming and tr
 
 ### open source projects
 
-* ROS package for AirSim simulator- C++ ([code](https://github.com/Mayankm96/airsim_img_publisher))
-* ROS package for AirSim simulator- Python ([code](https://github.com/Mayankm96/airsim_ros_client))
+* ROS package for AirSim simulator- in C++ ([code](https://github.com/Mayankm96/airsim_img_publisher))
+* ROS package for AirSim simulator- in Python ([code](https://github.com/Mayankm96/airsim_ros_client))
 * ROS package for saving data published from Zed Camera ([code](https://github.com/Mayankm96/extract_zed_data))
 * ROS package for publishing data from Sparton AHRS8 sensor ([code](https://github.com/Mayankm96/sparton_ahrs8_driver))
 
