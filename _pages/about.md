@@ -11,7 +11,7 @@ profile:
 
 news: true
 social: true
-years: [2018]
+years: [2019, 2018]
 ---
 
 I am a graduate student in Robotics, Systems and Controls program at [ETH Zurich](http://www.master-robotics.ethz.ch/). My research interests lie in designing learning-based systems for navigation and manipulation in unknown environments. I am currently working at [Robotic Systems Lab](http://www.rsl.ethz.ch/) under [Prof. Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911) on learning locomotion-manipulation policies for ANYmal.
@@ -84,6 +84,8 @@ Apart from my academic engagements, I enjoy playing lawn tennis, and running! In
 
 ### other relevant projects
 
+* Using Semantics to detect Camera Miscalibrations
+* Multi-camera DeepTAM
 * Verification of Neural Networks using Linear Programming ([report](RIAI_Manuel_Mayank))
 * Monocular Odometry with Bundle Adjustment ([report](/assets/documents/projects/VA4MR_Mini_Project.pdf), [video](https://www.youtube.com/watch?v=trbBh8Rjc4s&feature=youtu.be), [code](https://github.com/Mayankm96/Mono-Odometry))
 * Survey on Variational Autoencoders for Bayesian Inference ([report](/assets/documents/projects/cs698-report.pdf))

@@ -52,7 +52,7 @@
     {% if entry.type == "article" %}
       <em>{{entry.journal}}</em>
     {% elsif entry.type == "inproceedings" %}
-      <em>In {{entry.booktitle}}</em>
+      <em>{{entry.booktitle}}</em>
     {% elsif entry.type == "workshop" %}
       <em>{{entry.booktitle}},</em>
       <em>{{entry.maintitle}}</em>
@@ -74,7 +74,7 @@
     [<a href="{{ entry.video }}" target="_blank">Video</a>]
   {% endif %}
   {% if entry.html %}
-    [<a href="{{ entry.html }}" target="_blank">HTML</a>]
+    [<a href="{{ entry.html }}" target="_blank">Website</a>]
   {% endif %}
   {% if entry.pdf %}
     [<a href="{{ entry.pdf | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
