@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Multi- Robot System for Bomb Disposal
 description: Funded by The Boeing Company
@@ -28,4 +28,4 @@ I also trained the real-time object detection model [YOLOv2](https://pjreddie.co
 
 <div>
     <img class="col three" height="50%" width="50%" src="{{ site.baseurl }}/assets/img/projects/abhyast/alpha_rviz.png" alt="" title="URDF of Alpha"/>
-</div>
+</div> -->

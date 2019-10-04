@@ -1,25 +1,18 @@
-<!-- ---
+---
 layout: page
 title: Learning Hybrid Locomotion-Manipulation Control for Arm-on-ANYmal
 description: Semester Thesis
-img: /assets/img/projects/deeplanding/Bild_FOUNT2.jpg
+img: /assets/img/projects/rsl-alma/raisim_alma_rendered.png
 ---
 
-*Duration:* May'17 - August'18
+*Duration:* March'19 - July'19
 
-*Supervisor:* [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/)
+*Supervisor:* [Prof. Marco Hutter](https://rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911)
 
-Unmanned Aerial Vehicles (UAVs) equipped with bioradars are a life-saving technology that can enable identification of survivors under collapsed buildings in the aftermath of natural disasters such as earthquakes or gas explosions. However, these UAVs have to be able to autonomously land on debris piles in order to accurately locate the survivors. This problem is extremely challenging as the structure of these debris piles is often unknown and no prior knowledge can be leveraged. In this work, we propose a computationally efficient system that is able to reliably identify safe landing sites and autonomously perform the landing maneuver.
+Although a lot of work has been towards the autonomy of mobile robots and manipulators, developments in the field of mobile manipulators have been slower mainly due to the complexity of these robots. In the last few years, deep reinforcement learning (RL) has emerged a promising solution for such kind of complex problems and have shown to work well even in high-dimensional continuous domains.  
 
-<p align="center">
-    <a class="button" href="/assets/documents/projects/Projektumriss_FOUNT2.pdf" target="_blank">View Outline <i>(in German)</i></a>
-    <a class="button" href="https://arxiv.org/abs/1809.05700" target="_blank">View Paper</a>
-</p>
-
-### Detection Algorithm
-
-Our algorithm computes costmaps based on several hazard factors including terrain flatness, steepness, depth accuracy and energy consumption information. We first estimate dense candidate landing sites from the resulting costmap and then employ clustering to group neighboring sites into a safe landing region. Finally, a minimum-jerk trajectory is computed for landing considering the surrounding obstacles and the UAV dynamics. We demonstrate the efficacy of our system using experiments from a city scale hyperrealistic simulation environment and in real-world scenarios with collapsed buildings.
+This work considerd the problem of learning policies for a mobile manipulator in partially observable domains. We considered the robot ALMA, a completely torque-controlled quadrupedal robot with six degrees of freedom robotic arm mounted on it. We formulated the learning problem as a cooperative multi-agent system comprising of the quadrupedal robot and the robotic arm, and extend the single-agent deep RL algorithm based on policy gradients to this setting. Specifically, we examined the centralized and decentralized multi-agent system designs without any explicit communication between the agents. We showed that learning based on a completely decentralized multi-agent system tends to outperform a centralized multi-agent system on a suite of cooperative control tasks that we propose in this work. These tasks were designed in order to train command conditioned policies for the robot. We considered the base velocity command for the mobile platform and the desired end-effector position of the manipulator as the set of commands for learning a holistic controller.
 
 <div>
-    <img class="col three" height="50%" width="50%" src="{{ site.baseurl }}/assets/img/projects/deeplanding/landing_algo.svg" alt="" title="Landing Algorithm"/>
-</div> -->
+    <img class="col three" height="50%" width="50%" src="{{ site.baseurl }}/assets/img/projects/rsl-alma/summary_obs_actions.png" alt="" title="Overview of Agent's Observations and Actions"/>
+</div>
