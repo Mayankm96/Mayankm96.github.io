@@ -16,9 +16,9 @@ years: [2019, 2018]
 
 I am a graduate student in Robotics, Systems and Controls program at [ETH Zurich](http://www.master-robotics.ethz.ch/). My research interests lie in designing learning-based systems for navigation and manipulation in unknown environments.
 
-At ETH, I received the opportunity to work with [Prof. Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911) on learning locomotion-manipulation policies for arm-on-ANYmal. Currently I am working with [Dr. Marco Gallieri](https://www.linkedin.com/in/marco-gallieri-166a0421/) and [Dr. S. S. M. Salehian](https://ch.linkedin.com/in/seyed-sina-mirrazavi-salehian-11772856) on safe-grasping of unknown objects for manipulators.
+At ETH, I received the opportunity to work with [Prof. Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911) on learning locomotion-manipulation policies for arm-on-ANYmal. Currently I am working with [Dr. Marco Gallieri](https://www.linkedin.com/in/marco-gallieri-166a0421/) and [Dr. S.S.M. Salehian](https://ch.linkedin.com/in/seyed-sina-mirrazavi-salehian-11772856) on safe-grasping of unknown objects for manipulators.
 
-I graduated from [IIT Kanpur](http://www.iitk.ac.in/) in May 2018 with a Bachelors in Electrical Engineering. In the summer of 2017, I worked with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) on predicting landing sites from aerial images. During my undergraduate program, I co-founded the [AUV team](https://auviitk.com) for marine robotics and achieved the runners-up position at [SAVe-2017](http://www.niot.res.in/SAVe/) .
+I graduated from [IIT Kanpur](http://www.iitk.ac.in/) in May 2018 with a Bachelors in Electrical Engineering. In the summer of 2017, I worked with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) on predicting landing sites from aerial images. During my undergraduate program, I co-founded the [AUV team](https://auviitk.com), a platform for research in marine robotics. We achieved the runners-up position at [SAVe-2017](http://www.niot.res.in/SAVe/) .
 
 Apart from my academic engagements, I enjoy playing lawn tennis, and running! In my spare time, I often end up on GitHub _(a good replacement to other form of social media)_.
 
