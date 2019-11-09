@@ -16,7 +16,7 @@ years: [2019, 2018]
 
 I am a graduate student in Robotics, Systems and Controls program at [ETH Zurich](http://www.master-robotics.ethz.ch/). My research interests lie in designing learning-based systems for navigation and manipulation in unknown environments.
 
-At ETH, I received the opportunity to work with [Prof. Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911) on learning locomotion-manipulation policies for arm-on-ANYmal. Currently I am working with [Dr. Marco Gallieri](https://www.linkedin.com/in/marco-gallieri-166a0421/) and [Dr. S.S.M. Salehian](https://ch.linkedin.com/in/seyed-sina-mirrazavi-salehian-11772856) on safe-grasping of unknown objects for manipulators.
+At ETH, I received the opportunity to work with [Prof. Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911) on learning locomotion-manipulation policies for arm-on-ANYmal. Currently I am working at NNAISENSE, with [Dr. Marco Gallieri](https://www.linkedin.com/in/marco-gallieri-166a0421/) and [Dr. S.S.M. Salehian](https://ch.linkedin.com/in/seyed-sina-mirrazavi-salehian-11772856), on safe-grasping of unknown objects for manipulators.
 
 I graduated from [IIT Kanpur](http://www.iitk.ac.in/) in May 2018 with a Bachelors in Electrical Engineering. In the summer of 2017, I worked with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) on predicting landing sites from aerial images. During my undergraduate program, I co-founded the [AUV team](https://auviitk.com), a platform for research in marine robotics. We achieved the runners-up position at [SAVe-2017](http://www.niot.res.in/SAVe/) .
 
@@ -115,9 +115,31 @@ Apart from my academic engagements, I enjoy playing lawn tennis, and running! In
     * preparing course materials and assignments
     * guest lecturer on system integration using ROS ([slides](/assets/documents/teaching/ae640a/ae640a_lecture1.pdf)), robot simulation using Gazebo ([slides](/assets/documents/teaching/ae640a/ae640a_lecture2.pdf)), mathematical foundation for Robotics ([slides](/assets/documents/teaching/ae640a/ae640a_lecture9.pdf)), and non-parametric filters for localization
 
-### tutorials
+---
 
-* (Spring 2019): Hierarchical Reinforcement Learning ([slides](/assets/documents/talks/HRL_Part2_Mayank.pdf))
+## __tutorials__
+
+#### reinforcement learning
+
+The following presentations are based some of the research papers I covered as a part of an RL reading group.
+
+* Maximum-a-Posteriori Policy Optimization ([slides](/assets/documents/talks/map-policy-optimization.pdf))
+    * MAP Policy Optimization, Abdolmaleki _et al._ (2018)
+    * V-MPO: On-Policy MAP Policy Optimization For Discrete and Continuous Control, Song _et al._ (2019)
+
+* Meta-Learning with Implicit Gradients ([slides](/assets/documents/talks/meta-learning-with-implicit-gradients.pdf))
+    * Meta-Learning with Implicit Gradients, Rajeswaran _et al._ (2019)
+
+* Hierarchical Reinforcement Learning ([slides](/assets/documents/talks/hierarchical_rl.pdf))
+    * FeUdal Networks for Hierarchical Reinforcement Learning, Vezhnevets _et al._ (2017)
+    * Data-Efficient Hierarchical Reinforcement Learning, Nachum _et al._ (2018)
+    * Meta Learning Shared Hierarchies, Frans _et al._ (2017)
+
+
+#### robotics
+
+As a part of the Robotics Club at IIT Kanpur, I gave these presentations to spread knowledge about robotics in the campus community.
+
 * (Summer 2018): Introduction to Robot Operating System ([slides](/assets/documents/talks/Intro_to_ROS.pdf), [tutorial](/assets/documents/talks/Tutorial-ROS.pdf), [post](/blog/2017/ros-tips/))
 * (Fall 2016): Sensors and Actuators ([slides](/assets/documents/talks/sensors-and-actuators.pdf))
 * (Fall 2016): Introduction to Robotics ([slides](/assets/documents/talks/intro-to-robotics.pdf))
