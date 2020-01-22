@@ -20,7 +20,8 @@ At ETH, I received the opportunity to work with [Prof. Marco Hutter](http://www.
 
 I graduated from [IIT Kanpur](http://www.iitk.ac.in/) in May 2018 with a Bachelors in Electrical Engineering. In the summer of 2017, I worked with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) on predicting landing sites from aerial images. During my undergraduate program, I co-founded the [AUV team](https://auviitk.com), a platform for research in marine robotics. We achieved the runners-up position at [SAVe-2017](http://www.niot.res.in/SAVe/) .
 
-Apart from my academic engagements, I enjoy playing lawn tennis, and running! In my spare time, I often end up on GitHub _(a good replacement to other form of social media)_.
+Apart from my academic engagements, I enjoy playing lawn tennis, hiking and running! *Occasionally I upload pictures
+from my trips on [Instagram](https://www.instagram.com/mayankm155/).*
 
 <div class="post">
 
