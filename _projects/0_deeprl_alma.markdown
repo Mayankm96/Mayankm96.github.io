@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Learning Hybrid Locomotion-Manipulation Control for Arm-on-ANYmal
+title: Learning Locomotion-Manipulation Control
 description: Semester Thesis
 img: /assets/img/projects/rsl-alma/raisim_alma_rendered.png
 ---

@@ -1,102 +1,105 @@
 ---
 ---
 
-{% if entry.abbr %}
-  {% if site.data.venues[entry.abbr] %}
-    <abbr>[<a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a>]</abbr>
-  {% else %}
-    <abbr>[{{entry.abbr}}]</abbr>
-  {% endif %}
-{% endif %}
 
-<div id="{{entry.key}}">
-  {% if entry.type == "thesis" %}
-    {{reference}}
-  {% else %}
-    <span class="title">{{entry.title}}</span>
-    <span class="author">
-      {% for author in entry.author_array %}
-        {% if forloop.length == 1 %}
-          {% if author.last == site.scholar.last_name %}
-            <em><b>{{author.first}} {{author.last}}</b></em>
+<div id="{{entry.key}}"  class="col three">
+  <div style="clear: both;">
+    <div style="">
+        <img class="col bibone first" src="{{ site.data.teasers[entry.abbr].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+    </div>
+  </div>
+  <div class="col bibtwo last">
+    {% if entry.type == "thesis" %}
+      {{reference}}
+    {% else %}
+      <span class="title">{{entry.title}}</span>
+      <span class="author">
+        {% for author in entry.author_array %}
+          {% if forloop.length == 1 %}
+            {% if author.last == site.scholar.last_name %}
+              <em><b>{{author.first}} {{author.last}}</b></em>
+            {% else %}
+              {{author.first}} {{author.last}}
+            {% endif %}
           {% else %}
-            {{author.first}} {{author.last}}
+            {% unless forloop.last %}
+              {% if author.last == site.scholar.last_name %}
+                <em><b>{{author.first}} {{author.last}}</b></em>,
+              {% else %}
+                {% if site.data.coauthors[author.last] %}
+                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
+                {% else %}
+                  {{author.first}} {{author.last}},
+                {% endif %}
+              {% endif %}
+            {% else %}
+              {% if author.last == site.scholar.last_name %}
+                and <em><b>{{author.first}} {{author.last}}</b></em>
+              {% else %}
+                {% if site.data.coauthors[author.last] %}
+                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                {% else %}
+                  and {{author.first}} {{author.last}}
+                {% endif %}
+              {% endif %}
+            {% endunless %}
           {% endif %}
-        {% else %}
-          {% unless forloop.last %}
-            {% if author.last == site.scholar.last_name %}
-              <em><b>{{author.first}} {{author.last}}</b></em>,
-            {% else %}
-              {% if site.data.coauthors[author.last] %}
-                <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
-              {% else %}
-                {{author.first}} {{author.last}},
-              {% endif %}
-            {% endif %}
-          {% else %}
-            {% if author.last == site.scholar.last_name %}
-              and <em><b>{{author.first}} {{author.last}}</b></em>
-            {% else %}
-              {% if site.data.coauthors[author.last] %}
-                and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
-              {% else %}
-                and {{author.first}} {{author.last}}
-              {% endif %}
-            {% endif %}
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
+        {% endfor %}
+      </span>
+
+      <span class="periodical">
+      {% if entry.type == "article" %}
+        <em>{{entry.journal}}</em>
+      {% elsif entry.type == "inproceedings" %}
+        <em>{{entry.booktitle}}</em>
+      {% elsif entry.type == "workshop" %}
+        <em>{{entry.booktitle}}</em>
+        <br>
+        <em>{{entry.maintitle}}</em>
+      {% endif %}
+      {% if entry.year %}
+        {{entry.year}}
+      {% endif %}
+      </span>
+    {% endif %}
+
+    <span class="links">
+    {% if entry.abstract %}
+      [<a class="abstract">Abs</a>]
+    {% endif %}
+    {% if entry.arxiv %}
+      [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
+    {% else%}
+      [arXiv (available soon)]
+    {% endif %}
+    {% if entry.video %}
+      [<a href="{{ entry.video }}" target="_blank">Video</a>]
+    {% endif %}
+    {% if entry.html %}
+      [<a href="{{ entry.html }}" target="_blank">Website</a>]
+    {% endif %}
+    {% if entry.pdf %}
+      [<a href="{{ entry.pdf | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+    {% endif %}
+    {% if entry.supp %}
+      [<a href="{{ entry.supp | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
+    {% endif %}
+    {% if entry.poster %}
+      [<a href="{{ entry.poster | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
+    {% endif %}
+    {% if entry.slides %}
+      [<a href="{{ entry.slides | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
+    {% endif %}
+    {% if entry.code %}
+      [<a href="{{ entry.code }}" target="_blank">Code</a>]
+    {% endif %}
     </span>
 
-    <span class="periodical">
-    {% if entry.type == "article" %}
-      <em>{{entry.journal}}</em>
-    {% elsif entry.type == "inproceedings" %}
-      <em>{{entry.booktitle}}</em>
-    {% elsif entry.type == "workshop" %}
-      <em>{{entry.booktitle}},</em>
-      <em>{{entry.maintitle}}</em>
-    {% endif %}
-    {% if entry.year %}
-      {{entry.year}}
-    {% endif %}
+    <!-- Hidden abstract block -->
+    {% if entry.abstract %}
+    <span class="abstract hidden">
+      <p>{{ entry.abstract }}</p>
     </span>
-  {% endif %}
-
-  <span class="links">
-  {% if entry.abstract %}
-    [<a class="abstract">Abs</a>]
-  {% endif %}
-  {% if entry.arxiv %}
-    [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
-  {% endif %}
-  {% if entry.video %}
-    [<a href="{{ entry.video }}" target="_blank">Video</a>]
-  {% endif %}
-  {% if entry.html %}
-    [<a href="{{ entry.html }}" target="_blank">Website</a>]
-  {% endif %}
-  {% if entry.pdf %}
-    [<a href="{{ entry.pdf | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
-  {% endif %}
-  {% if entry.supp %}
-    [<a href="{{ entry.supp | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
-  {% endif %}
-  {% if entry.poster %}
-    [<a href="{{ entry.poster | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
-  {% endif %}
-  {% if entry.slides %}
-    [<a href="{{ entry.slides | prepend: '/assets/documents/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
-  {% endif %}
-  {% if entry.code %}
-    [<a href="{{ entry.code }}" target="_blank">Code</a>]
-  {% endif %}
-  </span>
-
-  <!-- Hidden abstract block -->
-  {% if entry.abstract %}
-  <span class="abstract hidden">
-    <p>{{ entry.abstract }}</p>
-  </span>
-  {% endif %}
+    {% endif %}
+  </div>
 </div>

@@ -11,7 +11,7 @@ profile:
 
 news: true
 social: true
-years: [2019, 2018]
+years: [2020, 2019, 2018]
 ---
 
 I am a graduate student in Robotics, Systems and Controls program at [ETH Zurich](http://www.master-robotics.ethz.ch/). My research interests lie in designing learning-based systems for navigation and manipulation in unknown environments.
@@ -33,6 +33,7 @@ from my trips on [Instagram](https://www.instagram.com/mayankm155/).*
 
 ---
 
+{: #publications}
 ## __publications__
 
 {% for y in page.years %}
@@ -41,6 +42,7 @@ from my trips on [Instagram](https://www.instagram.com/mayankm155/).*
 
 ---
 
+{: #projects}
 ## __projects__
 
 {% for project in site.projects %}
@@ -87,6 +89,7 @@ from my trips on [Instagram](https://www.instagram.com/mayankm155/).*
 
 ##### At ETH Zurich
 
+* Online Adaptation using Graph Networks in Model-based RL
 * Using Semantics to detect Camera Miscalibrations
 * Multi-camera DeepTAM ([report](/assets/documents/projects/Multicam_Deeptam.pdf), [code](https://github.com/surirohit/multi-camera-deeptam))
 * Verification of Neural Networks using Linear Programming ([report](/assets/documents/projects/RIAI_Manuel_Mayank.pdf), [code](https://github.com/Mayankm96/verify_neural_networks))
@@ -109,6 +112,7 @@ from my trips on [Instagram](https://www.instagram.com/mayankm155/).*
 
 ---
 
+{: #teaching}
 ## __teaching__
 
 * (Winter 2017: TA, guest lecturer): [AE640A: Autonomous Navigation](https://ae640a.github.io) with [Mangal Kothari](https://www.iitk.ac.in/aero/mangal/)
@@ -118,6 +122,7 @@ from my trips on [Instagram](https://www.instagram.com/mayankm155/).*
 
 ---
 
+{: #tutorials}
 ## __tutorials__
 
 #### reinforcement learning
