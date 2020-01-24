@@ -27,7 +27,7 @@ at NNAISENSE on safe-learning and verification of controllers.
 
 My endeavors in robotics started during my undergraduate studies. In the summer of 2017,
 I worked under the guidance of [Abhinav Valada](http://www2.informatik.uni-freiburg.de/~valada/) and [Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) at Freiburg, Germany. My work focused on developing
-an autonomous UAV system with bio-radars for urban search and rescue missions. Out of self-interest,
+an autonomous UAV system with bio-radars for urban search and rescue missions. Out of self-motivation,
 I also co-founded the [AUV team](https://auviitk.com), a platform for marine robotics, in my freshman year.
 I spent most of my undergrad developing this technology and worked on various hardware and
 software aspects of the system. This project is currently led by [Mangal Kothari](https://www.iitk.ac.in/aero/mangal/)
