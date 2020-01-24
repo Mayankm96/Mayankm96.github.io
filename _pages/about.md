@@ -14,11 +14,22 @@ social: true
 years: [2020, 2019, 2018]
 ---
 
-I am a graduate student in Robotics, Systems and Controls program at [ETH Zurich](http://www.master-robotics.ethz.ch/). My research interests lie in designing learning-based systems for navigation and manipulation in unknown environments.
+I am a graduate student in Robotics, Systems and Controls program at ETH Zurich.
+I am a part of the [Robotic Systems Lab](https://rsl.ethz.ch/), headed by
+[Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911),
+where I work closely with the RL team on sim-to-real transfer of locomotion and manipulation control.
+Currently I am working with [Marco Gallieri](https://www.linkedin.com/in/marco-gallieri-166a0421/)
+at NNAISENSE on safe-learning and verification of controllers. I consider myself a
+full-stack roboticist and love working on unsolved challenges in creating autonomous
+systems.
 
-At ETH, I received the opportunity to work with [Prof. Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911) on learning locomotion-manipulation policies for arm-on-ANYmal. Currently I am working at NNAISENSE, with [Dr. Marco Gallieri](https://www.linkedin.com/in/marco-gallieri-166a0421/) and [Dr. S.S.M. Salehian](https://ch.linkedin.com/in/seyed-sina-mirrazavi-salehian-11772856), on safe-grasping of unknown objects for manipulators.
-
-I graduated from [IIT Kanpur](http://www.iitk.ac.in/) in May 2018 with a Bachelors in Electrical Engineering. In the summer of 2017, I worked with [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) on predicting landing sites from aerial images. During my undergraduate program, I co-founded the [AUV team](https://auviitk.com), a platform for research in marine robotics. We achieved the runners-up position at [SAVe-2017](http://www.niot.res.in/SAVe/) .
+My endeavours in robotics started during my undergraduate studies. In the summer of 2017,
+I worked under the guidance of [Abhinav Valada](http://www2.informatik.uni-freiburg.de/~valada/) and [Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/) at Freiburg, Germany. My work focused on developing
+an autonomous UAV system with bio-radars for urban search and rescue missions. Out of self-interest,
+I also co-founded the [AUV team](https://auviitk.com), a platform for marine robotics, in my freshman year.
+I spent most of my undergrad developing this technology and worked on various hardware and
+software aspects of the system. This project is currently led by [Mangal Kothari](https://www.iitk.ac.in/aero/mangal/)
+and I am now an advisor for the team.
 
 Apart from my academic engagements, I enjoy playing lawn tennis, hiking and running! *Occasionally I upload pictures
 from my trips on [Instagram](https://www.instagram.com/mayankm155/).*
@@ -39,113 +50,3 @@ from my trips on [Instagram](https://www.instagram.com/mayankm155/).*
 {% for y in page.years %}
   {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}
-
----
-
-{: #projects}
-## __projects__
-
-{% for project in site.projects %}
-
-{% if project.redirect %}
-<div class="project">
-    <div class="thumbnail">
-        <a href="{{ project.redirect }}" target="_blank">
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ project.title }}</h1>
-            <br/>
-            <p>{{ project.description }}</p>
-        </span>
-        </a>
-    </div>
-</div>
-{% else %}
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ project.title }}</h1>
-            <br/>
-            <p>{{ project.description }}</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-{% endif %}
-
-{% endfor %}
-
-##### At ETH Zurich
-
-* Online Adaptation using Graph Networks in Model-based RL
-* Using Semantics to detect Camera Miscalibrations
-* Multi-camera DeepTAM ([report](/assets/documents/projects/Multicam_Deeptam.pdf), [code](https://github.com/surirohit/multi-camera-deeptam))
-* Verification of Neural Networks using Linear Programming ([report](/assets/documents/projects/RIAI_Manuel_Mayank.pdf), [code](https://github.com/Mayankm96/verify_neural_networks))
-* Monocular Odometry with Bundle Adjustment ([report](/assets/documents/projects/VA4MR_Mini_Project.pdf), [video](https://www.youtube.com/watch?v=trbBh8Rjc4s&feature=youtu.be), [code](https://github.com/Mayankm96/Mono-Odometry))
-
-##### At IIT Kanpur
-
-* Survey on Variational Autoencoders for Bayesian Inference ([report](/assets/documents/projects/cs698-report.pdf))
-* Multi- Robot System for Bomb Disposal ([poster](/assets/documents/projects/Abhyast_Plan.jpg), [code](https://github.com/Boeing-Abhyast/Phase-VII))
-* Visual Odometry using careful Feature Selection and Tracking ([report](/assets/documents/projects/ee698-report.pdf), [code](https://github.com/Mayankm96/Stereo-Odometry-SOFT))
-* MATLAB based GUI for Motion Planning ([code](https://github.com/Mayankm96/Motion-Planning-GUI))
-* Failure Handling in Swarm of Quadrotors ([report](/assets/documents/projects/cs637-report.pdf))
-
-### open source projects
-
-* ROS package for AirSim simulator- in C++ ([code](https://github.com/Mayankm96/airsim_img_publisher))
-* ROS package for AirSim simulator- in Python ([code](https://github.com/Mayankm96/airsim_ros_client))
-* ROS package for saving data published from Zed Camera ([code](https://github.com/Mayankm96/extract_zed_data))
-* ROS package for publishing data from Sparton AHRS8 sensor ([code](https://github.com/Mayankm96/sparton_ahrs8_driver))
-
----
-
-{: #teaching}
-## __teaching__
-
-* (Winter 2017: TA, guest lecturer): [AE640A: Autonomous Navigation](https://ae640a.github.io) with [Mangal Kothari](https://www.iitk.ac.in/aero/mangal/)
-
-    * preparing course materials and assignments
-    * guest lecturer on system integration using ROS ([slides](/assets/documents/teaching/ae640a/ae640a_lecture1.pdf)), robot simulation using Gazebo ([slides](/assets/documents/teaching/ae640a/ae640a_lecture2.pdf)), mathematical foundation for Robotics ([slides](/assets/documents/teaching/ae640a/ae640a_lecture9.pdf)), and non-parametric filters for localization
-
----
-
-{: #tutorials}
-## __tutorials__
-
-#### reinforcement learning
-
-The following presentations are based some of the research papers I covered as a part of an RL reading group.
-
-* Maximum-a-Posteriori Policy Optimization ([slides](/assets/documents/talks/map-policy-optimization.pdf))
-    * MAP Policy Optimization, Abdolmaleki _et al._ (2018)
-    * V-MPO: On-Policy MAP Policy Optimization For Discrete and Continuous Control, Song _et al._ (2019)
-
-* Meta-Learning with Implicit Gradients ([slides](/assets/documents/talks/meta-learning-with-implicit-gradients.pdf))
-    * Meta-Learning with Implicit Gradients, Rajeswaran _et al._ (2019)
-
-* Hierarchical Reinforcement Learning ([slides](/assets/documents/talks/hierarchical_rl.pdf))
-    * FeUdal Networks for Hierarchical Reinforcement Learning, Vezhnevets _et al._ (2017)
-    * Data-Efficient Hierarchical Reinforcement Learning, Nachum _et al._ (2018)
-    * Meta Learning Shared Hierarchies, Frans _et al._ (2017)
-
-
-#### robotics
-
-As a part of the Robotics Club at IIT Kanpur, I gave these presentations to spread knowledge about robotics in the campus community.
-
-* (Summer 2018): Introduction to Robot Operating System ([slides](/assets/documents/talks/Intro_to_ROS.pdf), [tutorial](/assets/documents/talks/Tutorial-ROS.pdf), [post](/blog/2017/ros-tips/))
-* (Fall 2016): Sensors and Actuators ([slides](/assets/documents/talks/sensors-and-actuators.pdf))
-* (Fall 2016): Introduction to Robotics ([slides](/assets/documents/talks/intro-to-robotics.pdf))
