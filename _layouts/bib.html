@@ -56,9 +56,13 @@
         <em>{{entry.booktitle}}</em>
         <br>
         <em>{{entry.maintitle}}</em>
+      {% elsif entry.type == "preprint" %}
+        <em> (Under Review) </em>
       {% endif %}
-      {% if entry.year %}
-        {{entry.year}}
+      {% if entry.type != "preprint" %}
+        {% if entry.year %}
+          {{entry.year}}
+        {% endif %}
       {% endif %}
       </span>
     {% endif %}

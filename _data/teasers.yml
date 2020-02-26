@@ -6,3 +6,6 @@ miscalib:
 
 vision_uav:
   img: teasers/vision_uav.png
+
+lyap_mpc:
+  img: teasers/lyap_mpc.png
