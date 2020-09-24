@@ -5,9 +5,11 @@ permalink: /tutorials/
 description: Presentations as a part of reading groups and clubs.
 ---
 
-#### reinforcement learning
 
-The following presentations are based some of the research papers I covered as a part of an RL reading group.
+The following presentations are based some of the research papers I covered in various reading groups.
+
+* Kinematic Planning for Mobile Manipulators using Optimal Control ([slides](/assets/documents/talks/kinematic-planning-for-mobile-manipulators.pdf))
+    * Efficient kinematic planning for mobile manipulators with non-holonomic constraints using optimal control, Giftthaler _et al._ (2017)
 
 * Maximum-a-Posteriori Policy Optimization ([slides](/assets/documents/talks/map-policy-optimization.pdf))
     * MAP Policy Optimization, Abdolmaleki _et al._ (2018)
@@ -22,9 +24,7 @@ The following presentations are based some of the research papers I covered as a
     * Meta Learning Shared Hierarchies, Frans _et al._ (2017)
 
 
-#### robotics
-
-As a part of the Robotics Club at IIT Kanpur, I gave these presentations to spread knowledge about robotics in the campus community.
+As a part of the [Robotics Club](https://students.iitk.ac.in/roboclub/) at IIT Kanpur, I gave these presentations to share knowledge about robotics with the campus community:
 
 * (Summer 2018): Introduction to Robot Operating System ([slides](/assets/documents/talks/Intro_to_ROS.pdf), [tutorial](/assets/documents/talks/Tutorial-ROS.pdf), [post](/blog/2017/ros-tips/))
 * (Fall 2016): Sensors and Actuators ([slides](/assets/documents/talks/sensors-and-actuators.pdf))
