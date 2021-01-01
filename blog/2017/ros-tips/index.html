@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Vivek Gopalakrishnan | Useful Tips for ROS Users</title>
+  <meta name="description" content="A simple website for a Robotics Enthusiast.
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2017/ros-tips/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Vivek</strong> Gopalakrishnan
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+
+        <!-- Miscellarnous -->
+        <a class="page-link" href="/#publications">publications</a>
+        <a class="page-link" href="/projects">projects</a>
+        <a class="page-link" href="/tutorials">tutorials</a>
+
+        <!-- Blog -->
+        <!-- <a class="page-link" href="/blog/">blog</a> -->
+
+        <!-- CV link -->
+        <a class="page-link" href="/assets/documents/Mayank_CV.pdf">vitae</a>
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Useful Tips for ROS Users</h1>
+    <p class="post-meta">November 7, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <p>Earlier people had to write a large amount of code ranging from low-level driver functions to high-level control algorithms for their robots. I too experienced this <em>pain</em> when I started working on the <a href="https://auviitk.com">underwater vehicle</a> project in my undergraduate university. This approach sometimes made changing even one sensor on our system a daunting task. However, things changed when we started using <strong>Robot Operating System (ROS)</strong> as the framework for our robot’s software stack. The large open sourced community for ROS has made it possible to implement novel algorithms on the robot without worrying too much about the hardware-software integration.</p>
+
+<p>Although the <a href="(http://wiki.ros.org/ROS/Tutorials)">ROS tutorials</a> introduces various core concepts of ROS, it takes a bit of hard work to develop a better comprehension of the entire <a href="http://www.ni.com/white-paper/13929/en/">robot software architecture</a>. Even after going through tutorials, I struggled to write my first ROS node. <em>(Could be I am a slow learner? :P )</em> Having said that, the post highlights a few interesting ROS concepts and packages that a beginner might find useful in his journey as a robotics developer.</p>
+
+<blockquote>
+  <p><strong>DISCLAIMER:</strong> Some of the points have been taken from <a href="http://answers.ros.org/">ROS Answers</a> and <a href="http://wiki.ros.org/">ROS Documentation</a>. The blog mainly aims to put all the relevant sources together for a beginner to learn about this amazing framework smoothly.</p>
+</blockquote>
+
+<h2 id="1-different-naming-styles">1. Different Naming Styles</h2>
+
+<p>Nodes, topics, services, and parameters are referred to as graph resources in ROS. Each of these is identified with a unique graph resource name within the ROS computation graph. The naming scheme is hierarchical in nature. In general, there are three different naming systems followed:</p>
+
+<ol>
+  <li><strong>Global Name:</strong>
+    <ul>
+      <li>Begins with leading slash (<code class="language-plaintext highlighter-rouge">/</code>)</li>
+      <li>Requires no additional resolving to decide the resource being referred to</li>
+      <li>Comprises of a sequence of zero or more namespaces and a base name. The namespace helps in grouping related graph resources together while the base name describes the resource itself</li>
+    </ul>
+
+    <p><em>Examples:</em> <code class="language-plaintext highlighter-rouge">/turtle1/cmd_vel</code>, <code class="language-plaintext highlighter-rouge">/turtle1/pose</code> belong to the namespace <code class="language-plaintext highlighter-rouge">turtle1</code> with the base names <code class="language-plaintext highlighter-rouge">cmd_vel</code> and <code class="language-plaintext highlighter-rouge">pose</code> respectively</p>
+  </li>
+  <li><strong>Relative Name:</strong>
+    <ul>
+      <li>Does not have any special character at the start</li>
+      <li>Relies on ROS client library to resolve the name into a global name</li>
+      <li>Resolving done by attaching the name of default namespace to the front of relative name</li>
+      <li>Provides flexibility over organization of system and helps in avoiding name clashes when groups of same nodes are to be launched</li>
+    </ul>
+
+    <p><em>Examples:</em> <code class="language-plaintext highlighter-rouge">cmd_vel</code>, <code class="language-plaintext highlighter-rouge">camera/rgb/img_raw</code> are relative names. To map to the global name, suppose name of default namespace is <code class="language-plaintext highlighter-rouge">/alpha</code>. Conseqently the global names would <code class="language-plaintext highlighter-rouge">/alpha/cmd_vel</code> and <code class="language-plaintext highlighter-rouge">/alpha/camera/rgb/img_raw</code> respectively.</p>
+  </li>
+  <li><strong>Private Name:</strong>
+    <ul>
+      <li>Begins with tilde (<code class="language-plaintext highlighter-rouge">~</code>) character</li>
+      <li>Relies on ROS client library to resolve the name  into a global name</li>
+      <li>Resolving is done similar to that for relative name, however, the name of the node is used as namespace instead of default namespace</li>
+      <li>Often used for setting parameters to a node since a node’s namespace is not required to be shared</li>
+    </ul>
+
+    <p><em>Example:</em> For a node with global name <code class="language-plaintext highlighter-rouge">/zonePublisher</code>, if it has a private parameter <code class="language-plaintext highlighter-rouge">~land_site</code> then its global name would become <code class="language-plaintext highlighter-rouge">/zonePublisher/land_site</code></p>
+  </li>
+</ol>
+
+<p><strong>NOTE:</strong> To know more about graph resource names, refer to the book chapter <a href="https://www.cse.sc.edu/~jokane/agitr/agitr-letter-names.pdf">here</a>.</p>
+
+<h2 id="2-nodes-vs-nodelets">2. Nodes vs. Nodelets</h2>
+
+<p>In ROS each node runs as a single process. The nodes communicate with each other using the <a href="http://wiki.ros.org/ROS/TCPROS">TCPROS</a> protocol (which uses the standard TCP/IP Sockets). This usually suffices for most of the data transfer that needs to be done between nodes. However, when data is large (such as laser scans or point clouds), it is faster to send a pointer to the data location instead of sending the entire data in form of packets through the TCP protocol. In cases like these, nodelets prove to be useful.</p>
+
+<p>Nodelets allow running multiple algorithms in a thread, with each algorithm running as a thread in the process. <a href="http://wiki.ros.org/roscpp/Overview/Publishers%20and%20Subscribers#Intraprocess_Publishing"><code class="language-plaintext highlighter-rouge">roscpp</code></a> provides optimizations that allow pointers to be passed between publisher and subscriber calls within a node without the need of copying data from one memory location to another (also called zero copying). The ROS documentation <a href="http://wiki.ros.org/nodelet">here</a> provides a nice overview on how to write nodelets.</p>
+
+<h2 id="3-topics-vs-services-vs-actionlib">3. Topics vs. Services vs. Actionlib</h2>
+
+<p>The table below concisely describes how topics, services, and actionlib differ. More information about this is available in the ROSWiki documentation on <a href="http://wiki.ros.org/ROS/Patterns/Communication#Communication_via_Topics_vs_Services_vs_X">Communication Patterns</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Topics</th>
+      <th style="text-align: center">Services</th>
+      <th style="text-align: center">Actionlib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Used for continuous data streams (like sensor data, robot state)</td>
+      <td style="text-align: center">Used for remote procedure calls that terminate quickly, mainly query based actions (like performing inverse kinematics calculation)</td>
+      <td style="text-align: center">Used for any discrete behavior that moves a robot or that runs for a long time and feedback is required during execution</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Continuous data flow is allowed with many-to-many connections feasible</td>
+      <td style="text-align: center">Simple blocking call for processing requests</td>
+      <td style="text-align: center">More complex non-blocking background processing for real-world actions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="4-running-commands-via-a-checklist">4. Running commands via a checklist</h2>
+
+<p>Yes, it is possible to do this through the <a href="http://wiki.ros.org/screenrun"><code class="language-plaintext highlighter-rouge">screerun</code></a> package in ROS. The node <code class="language-plaintext highlighter-rouge">screenrun</code> parse over the commands written in a YAML file and push them onto a <em>virtual</em> terminal as if you have typed them. However, only those commands that end with <code class="language-plaintext highlighter-rouge">\015</code> (the octal literal for <code class="language-plaintext highlighter-rouge">Enter</code>) are executed.</p>
+
+<p>This comes in handy when you have to deal with large project repositories. Although running nodes by using launch files is common (and recommended), the <code class="language-plaintext highlighter-rouge">screenrun</code> package provides more flexibility over the general terminals commands that one might need to execute.</p>
+
+<p>A sample config file <code class="language-plaintext highlighter-rouge">config.yaml</code> is as follows:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">programs</span><span class="pi">:</span>
+  <span class="pi">-</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">2d-mapping</span>
+    <span class="na">commands</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">roscd alpha_master</span>
+      <span class="pi">-</span> <span class="s">roslaunch alpha_master sim_alpha_slam.launch\015</span>
+  <span class="pi">-</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">2d-navigation</span>
+    <span class="na">commands</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">roslaunch alpha_move_base move_base.launch\015</span>
+  <span class="pi">-</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">bag</span>
+    <span class="na">commands</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">rosbag record --duration=30 /map /particlecloud /tf</span></code></pre></figure>
+
+<p>To run the node, you could either use <code class="language-plaintext highlighter-rouge">rosrun screenrun screenrun [b]</code> or launch it through a launch file:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;launch&gt;</span>
+  <span class="nt">&lt;node</span> <span class="na">name=</span><span class="s">"screenrun"</span> <span class="na">pkg=</span><span class="s">"screenrun"</span> <span class="na">type=</span><span class="s">"screenrun"</span> <span class="na">args=</span><span class="s">"b"</span> <span class="na">output=</span><span class="s">"screen"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;rosparam</span> <span class="na">file=</span><span class="s">"$(find &lt;package-name&gt;)/screenrun/config.yaml"</span> <span class="na">command=</span><span class="s">"load"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/node&gt;</span>
+<span class="nt">&lt;/launch&gt;</span></code></pre></figure>
+
+<p><strong>NOTE:</strong> The argument <code class="language-plaintext highlighter-rouge">b</code> is optional. If <code class="language-plaintext highlighter-rouge">b</code> is passed, <a href="http://byobu.co/">byobu</a> is used instead of <a href="https://www.gnu.org/software/screen/">screen</a>.</p>
+
+<h2 id="5-single-threading-in-ros-processes">5. Single Threading in ROS Processes</h2>
+
+<p>Understanding <code class="language-plaintext highlighter-rouge">ros::spin()</code> and <code class="language-plaintext highlighter-rouge">ros::spinOnce()</code> is important when you start writing your nodes. Quoting Patrick’s
+<a href="https://answers.ros.org/question/11887/significance-of-rosspinonce/">answer</a> for significance of <code class="language-plaintext highlighter-rouge">ros::spinOnce()</code></p>
+
+<blockquote>
+  <p>In the background, ROS monitors socket connections for any topics you’ve subscribed to. When a message arrives, ROS pushes the subscriber callback onto a queue. It does not call it immediately. ROS only processes the callbacks when you tell it to with <code class="language-plaintext highlighter-rouge">ros::spinOnce()</code>. This is all part of roscpp’s <em>” toolbox, not framework”</em> philosophy. <a href="http://wiki.ros.org/roscpp">roscpp</a> does not mandate a particular threading model for your node, nor does it demand to wrap your <code class="language-plaintext highlighter-rouge">main()</code>. <code class="language-plaintext highlighter-rouge">ros::spin()</code> is purely a convenience, a main loop for ROS that repeatedly calls <code class="language-plaintext highlighter-rouge">ros::spinOnce()</code> until your node is shut down.</p>
+</blockquote>
+
+<p>If we dig a bit deeper through documentation on <a href="http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning">callbacks and spinning</a>, the answer by Patrick is verified through the code snippets given below:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ros::spin()</code> implementation</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;ros/callback_queue.h&gt;
+</span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span> <span class="n">n</span><span class="p">;</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">ros</span><span class="o">::</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+  <span class="n">ros</span><span class="o">::</span><span class="n">getGlobalCallbackQueue</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">callAvailable</span><span class="p">(</span><span class="n">ros</span><span class="o">::</span><span class="n">WallDuration</span><span class="p">(</span><span class="mf">0.1</span><span class="p">));</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ros::spinOnce()</code> implementation</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;ros/callback_queue.h&gt;
+</span>
+<span class="n">ros</span><span class="o">::</span><span class="n">getGlobalCallbackQueue</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">callAvailable</span><span class="p">(</span><span class="n">ros</span><span class="o">::</span><span class="n">WallDuration</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span></code></pre></figure>
+
+<p>In above procedures, the call to <code class="language-plaintext highlighter-rouge">ros::getGlobalCallbackQueue()</code> gets the global queue in which all callbacks are assigned to by default. The <code class="language-plaintext highlighter-rouge">callAvailable()</code> method pops everything present in the queue and invokes all of them. It has an optional timeout argument given above using <code class="language-plaintext highlighter-rouge">ros::WallDuration(..)</code>. If there are no callbacks in the queue and the timeout is set to 0, then the method returns immediately.</p>
+
+<p>Typically, <code class="language-plaintext highlighter-rouge">ros::spinOnce()</code> is used when the program has to perform certain actions other than responding to callbacks. These include when the rate at which a particular action is performed needs to be controlled. For instance, publishing data onto a topic at a particular frequency. Omitting either <code class="language-plaintext highlighter-rouge">ros::spin()</code> or <code class="language-plaintext highlighter-rouge">ros::spinOnce()</code> would make the code behave undesirably. Deleting <code class="language-plaintext highlighter-rouge">ros::spin()</code> from a subscriber node would close the execution after a while, while removal of <code class="language-plaintext highlighter-rouge">ros::spinOnce()</code> would make it appear as if no messages are being received. Thus, utmost care must be taken while writing your ROS node.</p>
+
+<h2 id="6-miss-the-guis">6. Miss the GUIs?</h2>
+
+<p>Running ROS commands through the terminal isn’t really a bad practice. However, if you are like me, then you’d prefer GUIs more any particular day. ROS actually provides its own Qt-based GUI tool called <a href="http://wiki.ros.org/rqt">rqt</a>. In the rqt_gui, various plugins can be imported to do a variety of things. The ones available include publishing to a topic, visualizing on rviz, robot monitor and many other given <a href="http://wiki.ros.org/rqt/Plugins">here</a>. In fact, if required you could design your own rqt plugin by following the tutorial <a href="http://wiki.ros.org/rqt/Tutorials/Create%20your%20new%20rqt%20plugin">here</a>.</p>
+
+<p>Well, the one which I grew a fancy for is particularly the <a href="http://wiki.ros.org/node_manager_fkie"><code class="language-plaintext highlighter-rouge">node_manager_fkie</code></a>. The interface makes it easier to launch bodes and monitor their health and view the topics, services, and parameters being published. Thus, saving the time to write terminal commands every time.</p>
+
+<div class="img_true">
+    <img class="col three" src="/assets/img/blog/ros-tips/node-manager.png" alt="" title="Node Manager GUI" />
+</div>
+
+<h2 id="7-implement-implement-implement">7. Implement. Implement. Implement.</h2>
+
+<p>This can’t be emphasized enough but claiming to know ROS by just having done the tutorials is equivalent to saying that one has learned how to code after just seeing the syntax of a programming language. Learning can be faster if you have an application in mind. If you don’t already, consider the following challenges:</p>
+
+<div class="img_raw">
+<img class="wrap one" src="/assets/img/blog/ros-tips/copy-paste-meme.jpg" alt="" title="How to become a Developer?" />
+</div>
+
+<ul>
+  <li><strong>For Hardware Lovers</strong>: Using your favorite developer platform (say, Arduino), and write an Arduino node that shall subscribe to a topic and use the information published there to perform some event such as actuation of a motor using PWM signals from the controller. (<em>Hint:</em> Take a look at the <a href="http://wiki.ros.org/rosserial">rosserial_arduino</a> package)</li>
+  <li><strong>For Computer Vision Lovers:</strong> Using the OpenCV library, write a node which publishes the image frames from a camera onto a topic and then visualize the data being published through the image_view package. (<em>Hint:</em> Take a look at the <a href="http://wiki.ros.org/cv_bridge">cv_bridge</a> package)</li>
+</ul>
+
+<p><strong>NOTE:</strong> The above list is open to additions. If you would like to add more to it, feel free to comment below on this post.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Sinking in all the above information might take a while but once you have understood them, I hope using ROS for your robot becomes easier.</p>
+
+<p>To be honest, this framework has much more to it than just the above-mentioned <em>points</em>. There are a few more interesting concepts like <a href="http://wiki.ros.org/message_filters">message filters</a>, setting up <a href="http://wiki.ros.org/diagnostics">diagnostics</a> for your robot which I would strongly recommend looking into when you get the time.</p>
+
+<p>If you enjoyed this post, it would be great if you would share it with your robotics-loving friends. Thank you!</p>
+
+  </article>
+
+  
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname  = 'mayankm-96';
+      var disqus_identifier = '/blog/2017/ros-tips';
+      var disqus_title      = "Useful Tips for ROS Users";
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    <center>
+      &copy; Copyright 2021 Vivek Gopalakrishnan.
+      Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+      
+    </center>
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92958928-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
