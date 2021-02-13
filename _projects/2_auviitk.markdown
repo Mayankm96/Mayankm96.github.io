@@ -11,11 +11,16 @@ img: /assets/img/projects/auv/varun.jpg
 
 As a student- initiated project at IIT Kanpur, the project aims to build marine systems to serve as a platform for research on underwater robotics in the institute and create affliations with industries looking for marine technology solutions. As one of the founding members of the team, I contributed towards various mechanical, electrical and software aspects of the project.
 
-We participated with our first vehicle, *Varun*, at the __National Student Autonomous Vehicle (SAVe) Competition__ in December 2016, and achieved the runners-up position on our debut.
+We participated with our first vehicle, *Varun*, at the __National Student Autonomous Vehicle (SAVe) Competition__ in December 2016, and achieved the runners-up position on our debut. Since then the project has been take over by next generation of students and the team has been participating at national and international events.
 
 <p align="center">
     <a class="button" href="" target="_blank">View Code</a>
-    <a class="button" href="http://auviitk.com/" target="_blank">Visit Website </a>
+    <a class="button" href="http://auv-iitk.github.io/" target="_blank">Visit Website </a>
+</p>
+
+
+<p align="center">
+  <img style="vertical-align:middle" src="{{ site.baseurl }}/assets/img/projects/auv/auv.gif" alt="" title="Autonomous Gate Detection and Navigation"/>
 </p>
 
 ### Mechanical Work

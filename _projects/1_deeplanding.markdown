@@ -7,7 +7,7 @@ img: /assets/img/projects/deeplanding/outdoor_testrun.jpeg
 
 *Duration:* May'17 - August'18
 
-*Supervisor:* [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/)
+*Supervisors:* [Dr. Abhinav Valada](https://rl.uni-freiburg.de/people/valada), [Prof. Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/)
 
 Unmanned Aerial Vehicles (UAVs) equipped with bioradars are a life-saving technology that can enable identification of survivors under collapsed buildings in the aftermath of natural disasters such as earthquakes or gas explosions. However, these UAVs have to be able to autonomously land on debris piles in order to accurately locate the survivors. This problem is extremely challenging as the structure of these debris piles is often unknown and no prior knowledge can be leveraged. In this work, we propose a computationally efficient system that is able to reliably identify safe landing sites and autonomously perform the landing maneuver.
 
