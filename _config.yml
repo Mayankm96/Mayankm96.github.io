@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Mayank Mittal
-email: mittalma@student.ethz.ch
+email: mittalma@ethz.ch
 description: > # this means to ignore newlines until "url:"
   A simple website for a Robotics Enthusiast.
 footer_text: >
@@ -21,7 +21,7 @@ repo: http://github.com/Mayankm96
 # Social integration
 # -----------------------------------------------------------------------------
 github_username: Mayankm96 # put your github username
-twitter_username: # put your twitter username
+twitter_username: mayankm155 # put your twitter username
 linkedin_username: mayankm-0096 # put your linkedin username
 scholar_authorid: iVXG-IkAAAAJ # put your google scholar author id
 contact_note: #  You can even add a little note about which of these is the best way to reach you.

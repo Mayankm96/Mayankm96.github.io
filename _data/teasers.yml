@@ -9,3 +9,6 @@ vision_uav:
 
 lyap_mpc:
   img: teasers/lyap_mpc.png
+
+articulated_mm:
+  img: teasers/articulated.svg
