@@ -16,7 +16,7 @@ years: [2021, 2020, 2019, 2018]
 
 ___"People who are really serious about software should make their own hardware."___ - Alan Kay
 
-I am a graduate student at [ETH Zurich](https://ethz.ch/en.html), advised by [Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911), and a Deep Learning R&D Engineer at [NVIDIA Research](https://www.nvidia.com/en-us/research/).
+I am a graduate student at [ETH Zurich](https://ethz.ch/en.html), advised by [Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911).
 My research is focused on high-level reasoning and planning for mobile manipulation.
 I also closely collaborate with [Animesh Garg](https://animesh.garg.tech/) at the University of Toronto.
 
