@@ -12,3 +12,6 @@ lyap_mpc:
 
 articulated_mm:
   img: teasers/articulated.svg
+
+trifinger:
+  img: teasers/trifinger.gif
