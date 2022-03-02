@@ -15,3 +15,6 @@ articulated_mm:
 
 trifinger:
   img: teasers/trifinger.gif
+
+alma_self_collision:
+  img: teasers/alma_self.gif
