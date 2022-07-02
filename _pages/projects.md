@@ -69,3 +69,4 @@ description: A growing collection of my cool projects.
 * ROS package for AirSim simulator- in Python ([code](https://github.com/Mayankm96/airsim_ros_client))
 * ROS package for saving data published from Zed Camera ([code](https://github.com/Mayankm96/extract_zed_data))
 * ROS package for publishing data from Sparton AHRS8 sensor ([code](https://github.com/Mayankm96/sparton_ahrs8_driver))
+* Python project for reinforcement learning with Trifinger robot [code](https://github.com/pairlab/leibnizgym/)

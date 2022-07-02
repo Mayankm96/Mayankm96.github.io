@@ -18,7 +18,7 @@ _How can a robot learn from its own interactions?_
 _What abstractions are necessary to describe a task?_  
 _When does a robot even know that the task is now completed?_  
 
-In a quest to find answers to the above questions, I am currently a PhD student at [ETH Zurich](https://ethz.ch/en.html), advised by [Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911), and a Deep Learning R&D Engineer at [NVIDIA Research](https://www.nvidia.com/en-us/research/). I also closely collaborate with [Animesh Garg](https://animesh.garg.tech/) at the [University of Toronto](https://web.cs.toronto.edu/).
+In a quest to find answers to the above questions, I am currently a PhD student at [ETH Zurich](https://ethz.ch/en.html) advised by [Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911), and a Research Scientist at [NVIDIA Research](https://www.nvidia.com/en-us/research/). I also closely collaborate with [Animesh Garg](https://animesh.garg.tech/) at the [University of Toronto](https://web.cs.toronto.edu/).
 
 Over the past few years, I have had the opportunity to work with some amazing robotic groups.
 I have been a visiting student researcher at [Vector Institute](https://vectorinstitute.ai/),
@@ -44,7 +44,7 @@ For undergrad/graduate students at [ETH Zurich](https://ethz.ch/en.html): In cas
 
 ## __research interests__
 
-I am primarily interested in decision-making and control for the operation of robots in human environments.
+I am primarily interested in the decision-making and control of robots in human environments.
 These days, my efforts are focused on designing perception-based systems for contact-rich manipulation tasks, such as articulated object interaction with mobile manipulators and in-hand manipulation.
 Other areas of interest include hierarchical reinforcement learning, optimal control, and 3D vision.
 
