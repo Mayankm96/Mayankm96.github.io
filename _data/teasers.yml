@@ -11,10 +11,13 @@ lyap_mpc:
   img: teasers/lyap_mpc.png
 
 articulated_mm:
-  img: teasers/articulated.svg
+  img: teasers/alma_dishwasher.gif
 
 trifinger:
   img: teasers/trifinger.gif
 
 alma_self_collision:
   img: teasers/alma_self.gif
+
+orbit:
+  img: teasers/orbit.jpg
