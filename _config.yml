@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-name: Mayank Mittal
+name: Luyang Zhao
 email: mittalma@ethz.ch
 description: > # this means to ignore newlines until "url:"
   A simple website for a Roboticist.
@@ -9,18 +9,18 @@ footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
-url: # the base hostname & protocol for your site
+url: luyangzhao.github.io # the base hostname & protocol for your site
 baseurl:   # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
 # google-analytics
 google_analytics: UA-92958928-1
-repo: http://github.com/Mayankm96
+repo: http://github.com/luyangzhao
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: Mayankm96 # put your github username
+github_username: luyangzhao # put your github username
 twitter_username: mayankm155 # put your twitter username
 linkedin_username: mayankm-0096 # put your linkedin username
 scholar_authorid: iVXG-IkAAAAJ # put your google scholar author id
