@@ -1,8 +1,8 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-name: Mayank Mittal
-email: mittalma@ethz.ch
+name: Luyang Zhao
+email: luyang.zhao.gr@dartmouth.edu
 description: > # this means to ignore newlines until "url:"
   A simple website for a Roboticist.
 footer_text: >
@@ -15,12 +15,12 @@ last_updated: # leave blank if you don't want to display last updated
 
 # google-analytics
 google_analytics: UA-92958928-1
-repo: http://github.com/Mayankm96
+repo: http://github.com/luyangzhao
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: Mayankm96 # put your github username
+github_username: luyangzhao # put your github username
 twitter_username: mayankm155 # put your twitter username
 linkedin_username: mayankm-0096 # put your linkedin username
 scholar_authorid: iVXG-IkAAAAJ # put your google scholar author id
@@ -43,7 +43,7 @@ text:
     older: 'Older'
 
 # Comments
-disqus_shortname: mayankm-96 # put your disqus shortname
+disqus_shortname: luyangzhao # put your disqus shortname
 
 # Optional features
 show_social_icons:  false
@@ -85,7 +85,7 @@ plugins:
 # Jekyll-Scholar
 scholar:
 
-  last_name: Mittal
+  last_name: Zhao
 
   style: apa
   locale: en
