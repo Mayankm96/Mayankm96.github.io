@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Luyang Zhao</title>
+  <title>Luyang Zhao | Predicting Landing Sites from Aerial Images</title>
   <meta name="description" content="A simple website for a Roboticist.
 ">
 
   <link rel="shortcut icon" href="luyangzhao.github.io/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="luyangzhao.github.io/assets/css/main.css">
-  <link rel="canonical" href="luyangzhao.github.io/blog/">
+  <link rel="canonical" href="luyangzhao.github.io/projects/1_deeplanding%202/">
 </head>
 
 
@@ -68,55 +68,33 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- <div class="header-bar">
-  <h1></h1>
-  <h2></h2>
-</div> -->
+        <div class="post">
 
-<ul class="post-list">
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/ros-tips/">Useful Tips for ROS Users</a></h2>
-      <p class="post-meta">November 7, 2017</p>
-      <p>Getting past a beginner's understanding of ROS quickly and properly.</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/ros-tips-2/">Useful Tips for ROS Users</a></h2>
-      <p class="post-meta">November 7, 2017</p>
-      <p>Getting past a beginner's understanding of ROS quickly and properly.</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/robotics-club/">Robotics Club: Why it exists?</a></h2>
-      <p class="post-meta">September 12, 2017</p>
-      <p>A few important reasons why student community groups help in moulding a scientific mind.</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/robotics-club-2/">Robotics Club: Why it exists?</a></h2>
-      <p class="post-meta">September 12, 2017</p>
-      <p>A few important reasons why student community groups help in moulding a scientific mind.</p>
-    </li>
-  
-</ul>
+  <header class="post-header">
+    <h1 class="post-title">Predicting Landing Sites from Aerial Images</h1>
+    <h5 class="post-description">DAAD Research Internship</h5>
+  </header>
 
+  <article class="post-content Predicting Landing Sites from Aerial Images clearfix">
+    <p><em>Duration:</em> May’17 - August’18</p>
 
-<div class="pagination clearfix mb1 mt4">
-  <div class="left">
-    
-      <span class="pagination-item disabled">Newer</span>
-    
-  </div>
-  <div class="right">
-    
-      <a class="pagination-item" href="/blog/page2/">Older</a>
-    
-  </div>
-  <div class="pagination-meta">Page 1 of 2</div>
+<p><em>Supervisors:</em> <a href="https://rl.uni-freiburg.de/people/valada">Dr. Abhinav Valada</a>, <a href="http://www2.informatik.uni-freiburg.de/~burgard/">Prof. Wolfram Burgard</a></p>
+
+<p>Unmanned Aerial Vehicles (UAVs) equipped with bioradars are a life-saving technology that can enable identification of survivors under collapsed buildings in the aftermath of natural disasters such as earthquakes or gas explosions. However, these UAVs have to be able to autonomously land on debris piles in order to accurately locate the survivors. This problem is extremely challenging as the structure of these debris piles is often unknown and no prior knowledge can be leveraged. In this work, we propose a computationally efficient system that is able to reliably identify safe landing sites and autonomously perform the landing maneuver.</p>
+
+<h3 id="detection-algorithm">Detection Algorithm</h3>
+
+<p>Our algorithm computes costmaps based on several hazard factors including terrain flatness, steepness, depth accuracy and energy consumption information. We first estimate dense candidate landing sites from the resulting costmap and then employ clustering to group neighboring sites into a safe landing region. Finally, a minimum-jerk trajectory is computed for landing considering the surrounding obstacles and the UAV dynamics. We demonstrate the efficacy of our system using experiments from a city scale hyperrealistic simulation environment and in real-world scenarios with collapsed buildings.</p>
+
+<div>
+    <img class="col three" height="50%" width="50%" src="/assets/img/projects/deeplanding/landing_algo.svg" alt="" title="Landing Algorithm" />
 </div>
 
+  </article>
 
+  
+
+</div>
 
       </div>
     </div>
