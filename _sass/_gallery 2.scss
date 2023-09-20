@@ -1,0 +1,66 @@
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+.blankbox {
+    background: $theme-color;
+}
+.img_row {
+    height: $img-height;
+    width: 100%;
+    overflow: hidden;
+    box-sizing:border-box;
+}
+.img_true {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing:border-box;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  float: right;
+  object-fit: contain;
+  box-sizing:border-box;
+  padding: $img-spacing;
+}
+.col {
+    width: 100%;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+    box-sizing:border-box;
+    padding: $img-spacing;
+}
+.one {
+    width:33.33%;
+}
+.two {
+    width: 66.66%;
+}
+.three {
+    width: 100%;
+}
+.bibone {
+  width:33.33%;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-right: 25px;
+}
+.bibtwo {
+  width:66.66%;
+  vertical-align: middle;
+}
+.caption {
+    height: 100%;
+    color: $caption-color;
+    text-align: center;
+    vertical-align: middle;
+    font-size: $caption-font-size;
+}
