@@ -1,7 +1,44 @@
 ---
 ---
 
-@preprint{mittal2023orbit,
+@inproceedings{mittal2024symmetry,
+  title={Symmetry Considerations for Learning Task Symmetric Robot Policies},
+  author={Mittal, Mayank and Rudin, Nikita and Klemm, Victor and Allshire, Arthur and Hutter, Marco},
+  abstract={Symmetry is a fundamental aspect of many real-world robotic tasks. However, current deep reinforcement learning (DRL) approaches can seldom harness and exploit symmetry effectively. Often, the learned behaviors fail to achieve the desired transformation invariances and suffer from motion artifacts. For instance, a quadruped may exhibit different gaits when commanded to move forward or backward, even though it is symmetrical about its torso. This issue becomes further pronounced in high-dimensional or complex environments, where DRL methods are prone to local optima and fail to explore regions of the state space equally. Past methods on encouraging symmetry for robotic tasks have studied this topic mainly in a single-task setting, where symmetry usually refers to symmetry in the motion, such as the gait patterns. In this paper, we revisit this topic for goal-conditioned tasks in robotics, where symmetry lies mainly in task execution and not necessarily in the learned motions themselves. In particular, we investigate two approaches to incorporate symmetry invariance into DRL -- data augmentation and mirror loss function. We provide a theoretical foundation for using augmented samples in an on-policy setting. Based on this, we show that the corresponding approach achieves faster convergence and improves the learned behaviors in various challenging robotic tasks, from climbing boxes with a quadruped to dexterous manipulation.},
+  booktitle={ICRA},
+  journal = {Proceedings of the International Conference on Robotics and Automation (ICRA)},
+  arxiv={2403.04359},
+  year={2024},
+  abbr= {symmetry},
+}
+
+@inproceedings{arm2024pedipulate,
+  title={Pedipulate: Enabling Manipulation Skills using a Quadruped Robot's Leg},
+  author={Arm, Philip and Mittal, Mayank and Kolvenbach, Hendrik and Hutter, Marco},
+  abstract={Legged robots have the potential to become vital in maintenance, home support, and exploration scenarios. In order to interact with and manipulate their environments, most legged robots are equipped with a dedicated robot arm, which means additional mass and mechanical complexity compared to standard legged robots. In this work, we explore pedipulation - using the legs of a legged robot for manipulation. By training a reinforcement learning policy that tracks position targets for one foot, we enable a dedicated pedipulation controller that is robust to disturbances, has a large workspace through whole-body behaviors, and can reach far-away targets with gait emergence, enabling loco-pedipulation. By deploying our controller on a quadrupedal robot using teleoperation, we demonstrate various real-world tasks such as door opening, sample collection, and pushing obstacles. We demonstrate load carrying of more than 2.0 kg at the foot. Additionally, the controller is robust to interaction forces at the foot, disturbances at the base, and slippery contact surfaces.},
+  booktitle={ICRA},
+  journal = {Proceedings of the International Conference on Robotics and Automation (ICRA)},
+  arxiv={2402.10837},
+  year={2024},
+  abbr= {pedipulate},
+  video= {https://youtu.be/GD4WyJPXQtU},
+  html= {https://sites.google.com/leggedrobotics.com/pedipulate},
+}
+
+@inproceedings{roth2023viplanner,
+  title={ViPlanner: Visual Semantic Imperative Learning for Local Navigation},
+  author={Roth, Pascal and Nubert, Julian and Yang, Fan and Mittal, Mayank and Hutter, Marco},
+  abstract={Real-time path planning in outdoor environments still challenges modern robotic systems due to differences in terrain traversability, diverse obstacles, and the necessity for fast decision-making. Established approaches have primarily focused on geometric navigation solutions, which work well for structured geometric obstacles but have limitations regarding the semantic interpretation of different terrain types and their affordances. Moreover, these methods fail to identify traversable geometric occurrences, such as stairs. To overcome these issues, we introduce ViPlanner, a learned local path planning approach that generates local plans based on geometric and semantic information. The system is trained using the Imperative Learning paradigm, for which the network weights are optimized end-to-end based on the planning task objective. This optimization uses a differentiable formulation of a semantic costmap, which enables the planner to distinguish between the traversability of different terrains and accurately identify obstacles. The semantic information is represented in 30 classes using an RGB colorspace that can effectively encode the multiple levels of traversability. We show that the planner can adapt to diverse real-world environments without requiring any real-world training. In fact, the planner is trained purely in simulation, enabling a highly scalable training data generation. Experimental results demonstrate resistance to noise, zero-shot sim-to-real transfer, and a decrease of 38.02% in terms of traversability cost compared to purely geometric-based approaches.},
+  booktitle={ICRA},
+  journal = {Proceedings of the International Conference on Robotics and Automation (ICRA)},
+  arxiv={2310.00982},
+  year={2024},
+  abbr= {viplanner},
+  video= {https://www.youtube.com/watch?v=6FEgU0kYqlM},
+  code= {https://github.com/leggedrobotics/viplanner},
+}
+
+@inproceedings{mittal2023orbit,
   title={ORBIT: A Unified Simulation Framework for Interactive Robot Learning Environments},
   author={Mittal, Mayank and Yu, Calvin and Yu, Qinxi and Liu, Jingzhou and Rudin, Nikita and Hoeller, David and others},
   abstract={We present ORBIT, a unified and modular framework for robot learning powered by NVIDIA Isaac Sim. It offers a modular design to easily and efficiently create robotic environments with photo-realistic scenes and fast and accurate rigid and deformable body simulation. With ORBIT, we provide a suite of benchmark tasks of varying difficulty -- from single-stage cabinet opening and cloth folding to multi-stage tasks such as room reorganization. To support working with diverse observations and action spaces, we include fixed-arm and mobile manipulators with different physically-based sensors and motion generators. ORBIT allows training reinforcement learning policies and collecting large demonstration datasets from hand-crafted or expert solutions in a matter of minutes by leveraging GPU-based parallelization. In summary, we offer an open-sourced framework that readily comes with 16 robotic platforms, 4 sensor modalities, 10 motion generators, more than 20 benchmark tasks, and wrappers to 4 learning libraries. With this framework, we aim to support various research areas, including representation learning, reinforcement learning, imitation learning, and task and motion planning. We hope it helps establish interdisciplinary collaborations in these communities, and its modularity makes it easily extensible for more tasks and applications in the future.},

@@ -11,7 +11,7 @@ profile:
 
 news: true
 social: true
-years: [2023, 2022, 2021, 2020, 2019, 2018]
+years: [2024, 2023, 2022, 2021, 2020, 2019, 2018]
 ---
 
 _How can a robot learn from its own interactions?_  
