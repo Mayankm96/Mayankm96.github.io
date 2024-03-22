@@ -1,10 +1,27 @@
 ---
 layout: page
-title: tutorials
-permalink: /tutorials/
-description: Presentations as a part of reading groups and clubs.
+title: teaching
+permalink: /teaching/
+description: Tutorials and teaching responsibilities.
 ---
 
+
+## teaching
+
+* (Spring 2023: instructor, ETH Zurich): [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)
+
+* (Spring 2022: instructor, ETH Zurich): [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)
+
+* (Fall 2021: TA, ETH Zurich): [Robot Dynamics](https://rsl.ethz.ch/education-students/lectures/robotdynamics.html)
+
+* (Fall 2017: head TA, IIT Kanpur): [AE640A: Autonomous Navigation](https://ae640a.github.io) with [Mangal Kothari](https://www.iitk.ac.in/aero/mangal/)
+
+    * preparing course materials and assignments
+    * guest lecturer on system integration using ROS ([slides](/assets/documents/teaching/ae640a/ae640a_lecture1.pdf)), robot simulation using Gazebo ([slides](/assets/documents/teaching/ae640a/ae640a_lecture2.pdf)), mathematical foundation for Robotics ([slides](/assets/documents/teaching/ae640a/ae640a_lecture9.pdf)), and non-parametric filters for localization
+
+---
+
+## tutorials
 
 The following presentations are based some of the research papers I covered in various reading groups.
 
@@ -29,13 +46,3 @@ As a part of the [Robotics Club](https://students.iitk.ac.in/roboclub/) at IIT K
 * (Summer 2018): Introduction to Robot Operating System ([slides](/assets/documents/talks/Intro_to_ROS.pdf), [tutorial](/assets/documents/talks/Tutorial-ROS.pdf), [post](/blog/2017/ros-tips/))
 * (Fall 2016): Sensors and Actuators ([slides](/assets/documents/talks/sensors-and-actuators.pdf))
 * (Fall 2016): Introduction to Robotics ([slides](/assets/documents/talks/intro-to-robotics.pdf))
-
----
-
-## teaching
-
-
-* (Winter 2017: TA, guest lecturer): [AE640A: Autonomous Navigation](https://ae640a.github.io) with [Mangal Kothari](https://www.iitk.ac.in/aero/mangal/)
-
-    * preparing course materials and assignments
-    * guest lecturer on system integration using ROS ([slides](/assets/documents/teaching/ae640a/ae640a_lecture1.pdf)), robot simulation using Gazebo ([slides](/assets/documents/teaching/ae640a/ae640a_lecture2.pdf)), mathematical foundation for Robotics ([slides](/assets/documents/teaching/ae640a/ae640a_lecture9.pdf)), and non-parametric filters for localization

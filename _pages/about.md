@@ -14,19 +14,22 @@ social: true
 years: [2024, 2023, 2022, 2021, 2020, 2019, 2018]
 ---
 
-_How can a robot learn from its own interactions?_  
-_What abstractions are necessary to describe a task?_  
-_When does a robot even know that the task is now completed?_  
+_How can a robot learn to use its different parts for interactions?_  
+_How can we go beyond proprioception for robust mobile manipulation?_  
+_What abstractions are necessary to describe multiple tasks?_ 
 
-In a quest to find answers to the above questions, I am currently a PhD student at [ETH Zurich](https://ethz.ch/en.html) advised by [Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911), and a Research Scientist at [NVIDIA Research](https://www.nvidia.com/en-us/research/). I also closely collaborate with [Animesh Garg](https://animesh.garg.tech/) at the [University of Toronto](https://web.cs.toronto.edu/).
+To find *some* answers to the above questions, I am currently a PhD student at [ETH Zurich](https://ethz.ch/en.html) advised by [Marco Hutter](http://www.rsl.ethz.ch/the-lab/people/person-detail.html?persid=121911), and a Research Scientist at [NVIDIA Research](https://www.nvidia.com/en-us/research/).
 
-Over the past few years, I have had the opportunity to work with some amazing robotic groups.
+Over the span of my career, I have had the opportunity to work with some amazing robotic groups
+on many different robotic platforms.
 I have been a visiting student researcher at [Vector Institute](https://vectorinstitute.ai/),
 a research intern at [NNAISENSE](https://nnaisense.com/), and a part-time research engineer
 at [ETH Zurich](https://ethz.ch/en.html). During my undergrad at [IIT Kanpur](http://www.iitk.ac.in/ee/), I was a visiting student at
 University of Freiburg, Germany, working closely with [Abhinav Valada](http://www2.informatik.uni-freiburg.de/~valada/) and [Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/).
+I also founded the [AUV-IITK](https://auv-iitk.github.io/#/landing-page) team, where I worked on different
+hardware and software aspects of building an autonomous underwater vehicle.
 
-I am incredibly thankful to my collaborators and mentors, and enjoy exploring new domains through collaborations. If you have questions or would like to work together, feel free to reach out through
+If you have questions or would like to discuss ideas, feel free to reach out through
 [email](mailto:mittalma@ethz.ch)!
 
 <!-- _Shameless promotion:_  
@@ -39,14 +42,6 @@ For undergrad/graduate students at [ETH Zurich](https://ethz.ch/en.html): In cas
   {% endif %}
 
 </div>
-
----
-
-## __research interests__
-
-I am primarily interested in the decision-making and control of robots in human environments.
-These days, my efforts are focused on designing perception-based systems for contact-rich manipulation tasks, such as articulated object interaction with mobile manipulators and in-hand manipulation.
-Other areas of interest include hierarchical reinforcement learning, optimal control, and 3D vision.
 
 ---
 
