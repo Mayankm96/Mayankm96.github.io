@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Mayank</strong> Mittal
-description: Graduate Student | Department of Mechanical Engineering, ETH Zurich
+description: Graduate Student | ETH Zurich | NVIDIA
 
 profile:
   align: right

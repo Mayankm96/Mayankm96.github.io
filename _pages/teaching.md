@@ -1,12 +1,12 @@
 ---
 layout: page
-title: teaching
+title: teaching and tutorials
 permalink: /teaching/
-description: Tutorials and teaching responsibilities.
+description: A collection of learning resources.
 ---
 
 
-## teaching
+### teaching
 
 * (Spring 2023: instructor, ETH Zurich): [Programming for Robotics - ROS](https://rsl.ethz.ch/education-students/lectures/ros.html)
 
@@ -14,14 +14,14 @@ description: Tutorials and teaching responsibilities.
 
 * (Fall 2021: TA, ETH Zurich): [Robot Dynamics](https://rsl.ethz.ch/education-students/lectures/robotdynamics.html)
 
-* (Fall 2017: head TA, IIT Kanpur): [AE640A: Autonomous Navigation](https://ae640a.github.io) with [Mangal Kothari](https://www.iitk.ac.in/aero/mangal/)
+* (Fall 2017: head TA, IIT Kanpur): [Autonomous Navigation](https://ae640a.github.io) with [Mangal Kothari](https://home.iitk.ac.in/~mangal/)
 
     * preparing course materials and assignments
     * guest lecturer on system integration using ROS ([slides](/assets/documents/teaching/ae640a/ae640a_lecture1.pdf)), robot simulation using Gazebo ([slides](/assets/documents/teaching/ae640a/ae640a_lecture2.pdf)), mathematical foundation for Robotics ([slides](/assets/documents/teaching/ae640a/ae640a_lecture9.pdf)), and non-parametric filters for localization
 
 ---
 
-## tutorials
+### tutorials
 
 The following presentations are based some of the research papers I covered in various reading groups.
 
