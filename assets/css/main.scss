@@ -32,3 +32,14 @@
 @import 'social-icons';
 @import 'tables';
 @import 'typography';
+
+// Define variables for reusability
+$yellow: rgba(250, 255, 110, 0.467);
+
+// Define the .yellow-box class
+.yellow-box {
+    background-color: $yellow; // Set the background color to yellow
+    padding: 10px; // Add padding to the box
+    margin-bottom: 20px; // Add some space at the bottom
+    // Add any additional styling as needed
+}

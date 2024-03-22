@@ -2,7 +2,7 @@
 ---
 
 
-<div id="{{entry.key}}"  class="col three">
+<div id="{{entry.key}}"  class="col three {% if entry.selected %}yellow-box{% endif %}">
   <div style="clear: both;">
     <div style="">
         <img class="col bibone first" src="{{ site.data.teasers[entry.abbr].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
