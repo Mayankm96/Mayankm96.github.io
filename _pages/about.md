@@ -6,7 +6,7 @@ description: Graduate Student | ETH Zurich | NVIDIA
 
 profile:
   align: right
-  image: prof_pic3.jpg
+  image: prof_pic2.jpg
   address: #mention address
 
 news: true
