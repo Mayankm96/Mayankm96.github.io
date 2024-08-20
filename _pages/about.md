@@ -46,7 +46,7 @@ For undergrad/graduate students at [ETH Zurich](https://ethz.ch/en.html): In cas
 ---
 
 {: #publications}
-## __publications__
+## __some publications__
 
 {% for y in page.years %}
   {% bibliography -f papers -q @*[year={{y}}]* %}
