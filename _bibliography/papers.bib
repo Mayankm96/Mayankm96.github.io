@@ -1,6 +1,30 @@
 ---
 ---
 
+@inproceedings{sleiman2024guided,
+  title={Perceptive Pedipulation with Local Obstacle Avoidance},
+  author={Sleiman*, Jean-Pierre, and Mittal*, Mayank and Hutter, Marco},
+  abstract={Reinforcement learning (RL) often necessitates a meticulous Markov Decision Process (MDP) design tailored to each task. This work aims to address this challenge by proposing a systematic approach to behavior synthesis and control for multi-contact loco-manipulation tasks, such as navigating spring-loaded doors and manipulating heavy dishwashers. We define a task-independent MDP to train RL policies using only a single demonstration per task generated from a model-based trajectory optimizer. Our approach incorporates an adaptive phase dynamics formulation to robustly track the demonstrations while accommodating dynamic uncertainties and external disturbances. We compare our method against prior motion imitation RL works and show that the learned policies achieve higher success rates across all considered tasks. These policies learn recovery maneuvers that are not present in the demonstration, such as re-grasping objects during execution or dealing with slippages. Finally, we successfully transfer the policies to a real robot, demonstrating the practical viability of our approach.},
+  booktitle={CoRL},
+  journal = {Proceedings of the PMLR Conference on Robot Learning},
+  arxiv={2410.07195},
+  year={2024},
+  abbr= {guided-rl-mcp},
+  html= {https://leggedrobotics.github.io/guided-rl-locoma},
+}
+
+@inproceedings{stolle2024perceptivepedipulate,
+  title={Perceptive Pedipulation with Local Obstacle Avoidance},
+  author={Stolle, Jonas, and Arm, Philip and Mittal, Mayank and Hutter, Marco},
+  abstract={Pedipulation leverages the feet of legged robots for mobile manipulation, eliminating the need for dedicated robotic arms. While previous works have showcased blind and task-specific pedipulation skills, they fail to account for static and dynamic obstacles in the environment. To address this limitation, we introduce a reinforcement learning-based approach to train a whole-body obstacle-aware policy that tracks foot position commands while simultaneously avoiding obstacles. Despite training the policy in only five different static scenarios in simulation, we show that it generalizes to unknown environments with different numbers and types of obstacles. We analyze the performance of our method through a set of simulation experiments and successfully deploy the learned policy on the ANYmal quadruped, demonstrating its capability to follow foot commands while navigating around static and dynamic obstacles.},
+  booktitle={ICHR},
+  journal = {Proceedings of the IEEE International Conference on Humanoid Robots (ICHR)},
+  arxiv={2409.07195},
+  year={2024},
+  abbr= {perceptive-pedipulate},
+  html= {https://sites.google.com/leggedrobotics.com/perceptive-pedipulate},
+}
+
 @inproceedings{mittal2024symmetry,
   title={Symmetry Considerations for Learning Task Symmetric Robot Policies},
   author={Mittal*, Mayank and Rudin*, Nikita and Klemm, Victor and Allshire, Arthur and Hutter, Marco},
