@@ -86,6 +86,7 @@ plugins:
 scholar:
 
   last_name: Mittal
+  last_name_equal: Mittal*
 
   style: apa
   locale: en
