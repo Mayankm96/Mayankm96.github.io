@@ -64,6 +64,9 @@
           {{entry.year}}
         {% endif %}
       {% endif %}
+      {% if entry.award %}
+        | <font color="#EF273E">{{ entry.award }}</font>
+      {% endif %}
       </span>
     {% endif %}
 
