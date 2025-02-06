@@ -36,3 +36,9 @@ perceptive-pedipulate:
 
 guided-rl-mcp:
   img: teasers/guided-rl-mcp.gif
+
+dynamic-object-push:
+  img: teasers/dynamic-object-push.gif
+
+whole-body-ee-pose:
+  img: teasers/whole-body-ee-pose.gif
