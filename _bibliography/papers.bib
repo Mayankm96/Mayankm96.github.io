@@ -1,6 +1,29 @@
 ---
 ---
 
+@inproceedings{bhardwaj2026viserdex,
+  title={ViserDex: Visual Sim-to-Real for Robust Dexterous In-hand Reorientation},
+  author={Bhardwaj, Arjun and Wilder-Smith, Maximum and Mittal, Mayank and Patil, Vaishakh and Hutter, Marco},
+  booktitle={RSS},
+  abstract={In-hand object reorientation requires precise estimation of the object pose to handle complex task dynamics. While RGB sensing offers rich semantic cues for pose tracking, existing solutions rely on multi-camera setups or costly ray tracing. We present a sim-to-real framework for monocular RGB in-hand reorientation that integrates 3D Gaussian Splatting (3DGS) to bridge the visual sim-to-real gap. Our key insight is performing domain randomization in the Gaussian representation space: by applying physically consistent, pre-rendering augmentations to 3D Gaussians, we generate photorealistic, randomized visual data for object pose estimation. The manipulation policy is trained using curriculum-based reinforcement learning with teacher-student distillation, enabling efficient learning of complex behaviors. Importantly, both perception and control models can be trained independently on consumer-grade hardware, eliminating the need for large compute clusters. Experiments show that the pose estimator trained with 3DGS data outperforms those trained using conventional rendering data in challenging visual environments. We validate the system on a physical multi-fingered hand equipped with an RGB camera, demonstrating robust reorientation of five diverse objects even under challenging lighting conditions. Our results highlight Gaussian splatting as a practical path for RGB-only dexterous manipulation.},
+  year={2026},
+  arxiv={2604.11138},
+  html={https://rffr.leggedrobotics.com/works/viserdex/},
+  abbr={viserdex},
+}
+
+@article{mittal2025isaac,
+  title={Isaac lab: A gpu-accelerated simulation framework for multi-modal robot learning},
+  author={Mittal, Mayank and Roth, Pascal and Tigue, James and Richard, Antoine and Zhang, Octi and Du, Peter and Serrano-Munoz, Antonio and Yao, Xinjie and Zurbr{\"u}gg, Ren{\'e} and Rudin, Nikita and others},
+  arxiv={2511.04831},
+  journal={arXiv},
+  abstract={We present Isaac Lab, the natural successor to Isaac Gym, which extends the paradigm of GPU-native robotics simulation into the era of large-scale multi-modal learning. Isaac Lab combines high-fidelity GPU parallel physics, photorealistic rendering, and a modular, composable architecture for designing environments and training robot policies. Beyond physics and rendering, the framework integrates actuator models, multi-frequency sensor simulation, data collection pipelines, and domain randomization tools, unifying best practices for reinforcement and imitation learning at scale within a single extensible platform. We highlight its application to a diverse set of challenges, including whole-body control, cross-embodiment mobility, contact-rich and dexterous manipulation, and the integration of human demonstrations for skill acquisition. Finally, we discuss upcoming integration with the differentiable, GPU-accelerated Newton physics engine, which promises new opportunities for scalable, data-efficient, and gradient-based approaches to robot learning. We believe Isaac Lab's combination of advanced simulation capabilities, rich sensing, and data-center scale execution will help unlock the next generation of breakthroughs in robotics research.},
+  html={https://developer.nvidia.com/isaac/lab},
+  year={2025},
+  abbr={isaaclab},
+  code={https://github.com/isaac-sim/IsaacLab},
+}
+
 @inproceedings{cathomen2025divide,
   title={Divide, Discover, Deploy: Factorized Skill Learning with Symmetry and Style Priors},
   author={Cathomen, Rafael and Mittal, Mayank and Vlastelica, Marin and Hutter, Marco},
@@ -11,6 +34,7 @@
   html={https://leggedrobotics.github.io/d3-skill-discovery/},
   abbr= {d3-skill-discovery},
   award={Oral (top 6%)},
+  code={https://github.com/leggedrobotics/d3-skill-discovery},
 }
 
 @inproceedings{portela2024whole,
